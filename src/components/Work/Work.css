@@ -1,0 +1,32 @@
+.work_section {
+  padding: 5rem;
+  /* background-color: var(--color-grey); */
+}
+
+.work {
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.work_text {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: 40rem;
+  height: 35rem;
+}
+
+.gallery_description {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}

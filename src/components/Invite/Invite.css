@@ -1,0 +1,32 @@
+.invite_section {
+  padding: 5rem;
+}
+
+.invite {
+  text-align: center;
+  align-items: center;
+}
+
+.invite_header {
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.invite_text {
+  font-size: 2rem;
+}
+
+.link {
+  text-align: center;
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.link_url {
+  color: blue;
+  font-size: 2rem;
+}

@@ -18,16 +18,16 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li className="p__opensans">
-          <a href="#home">Home</a>
+          <a href="#home">Acasa</a>
         </li>
         <li className="p__opensans">
-          <a href="#about">About</a>
+          <a href="#about">Despre</a>
         </li>
         <li className="p__opensans">
-          <a href="#solutions">Solutions</a>
+          <a href="#solutions">Solutii</a>
         </li>
         <li className="p__opensans">
-          <a href="#events">Events and Workshops</a>
+          <a href="#events">Evenimente si Workshopuri</a>
         </li>
         <li className="p__opensans">
           <a href="#contact">Contact</a>
@@ -71,22 +71,22 @@ const Navbar = () => {
             <ul className="navbar-smallscreen_links">
               <li>
                 <a href="#home" onClick={() => setToggleMenu(false)}>
-                  Home
+                  Acasa
                 </a>
               </li>
               <li>
                 <a href="#about" onClick={() => setToggleMenu(false)}>
-                  About
+                  Despre
                 </a>
               </li>
               <li>
                 <a href="#solutions" onClick={() => setToggleMenu(false)}>
-                  Solutions
+                  Solutii
                 </a>
               </li>
               <li>
                 <a href="#awards" onClick={() => setToggleMenu(false)}>
-                  Events and Workshops
+                  Evenimente si Workshopuri
                 </a>
               </li>
               <li>

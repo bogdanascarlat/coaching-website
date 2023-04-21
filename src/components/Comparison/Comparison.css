@@ -1,0 +1,25 @@
+.comparison-title {
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-left: 2rem;
+}
+
+.comparison {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.comparison-text {
+  font-size: 2rem;
+}
+
+.wrapper_info {
+  background-color: #fff;
+}
+
+.middle-container {
+  width: 100%;
+  background-color: #fff4e6;
+}

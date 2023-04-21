@@ -1,22 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Luxurious+Script&family=Nunito:wght@200;300;400;600;700&family=Oswald:wght@200&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;700;900&display=swap");
 
 .header_background {
-  background-size: cover;
-  width: 80%;
-  height: 50rem;
-  opacity: 0.8;
+  width: 65rem;
+  margin: 6rem 5rem 6rem 1rem;
 }
 
 .header_container {
-  position: relative;
-  text-align: center;
-  color: white;
-  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10rem;
 }
 
 .overlay {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 50%;
+  left: 65%;
+  text-align: justify;
+  width: 38%;
   transform: translate(-50%, -50%);
+  margin: 10rem;
+}
+
+.header_title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+  line-height: 1.6;
+}
+
+.header_content {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
