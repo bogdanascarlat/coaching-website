@@ -3,13 +3,13 @@ import "./Values.css";
 
 const Values = () => (
   <div>
-    <h2 class="values-title">Valori</h2>
-    <div className="values-container">
-      <div class="value-item"></div>
-      <div class="value-item">One</div>
-      <div class="value-item">Two</div>
-      <div class="value-item">Three</div>
-      <div class="value-item">Four</div>
+    <h2 class="grid-title">Valori</h2>
+    <div className="grid-container">
+      <div class="grid-item">One</div>
+      <div class="grid-item">Two</div>
+      <div class="grid-item">Three</div>
+      <div class="grid-item">Four</div>
+      <div class="grid-item">Five</div>
     </div>
   </div>
 );

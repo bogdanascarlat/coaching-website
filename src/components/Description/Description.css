@@ -1,5 +1,5 @@
-.description-h1 {
-  font-size: 3.5rem;
+.description-title {
+  font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 3.5rem;
 }
@@ -7,4 +7,8 @@
 .wrapper_info {
   background-color: #fff5f5 !important;
   margin-left: auto !important;
+}
+
+.description {
+  margin-bottom: 25rem;
 }

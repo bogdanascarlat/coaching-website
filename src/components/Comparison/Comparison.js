@@ -4,32 +4,29 @@ import before from "../../assets/before.jpg";
 import after from "../../assets/after.jpg";
 
 const Comparison = () => (
-  <div className="description wrapper section_padding">
-    <div className="wrapper_info">
-      <h1 className="comparison-title">Inainte</h1>
-      <div className="comparison">
-        <p className="comparison-text" style={{ margin: "2rem" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <img src={before} alt="before"></img>
+  <div className="comparison-wrapper">
+    <div className="container">
+      <div className="top-wrapper">
+        <div className="top-left">
+          <img src={before} alt="before" />
+        </div>
+        <span className="top-container">
+          <p className="top-text">
+            Voi fi cu tine sa te sustin in procesul de dezvoltare si sa te
+            incurajez sa iti urmezi visurile si sa iti atingi obiectivele.
+          </p>
+        </span>
       </div>
-    </div>
-    <div class="middle-container">
-      <h2>&#8243;Quote</h2>
-    </div>
-    <div className="wrapper_info">
-      <h1 className="comparison-title">Dupa</h1>
-      <div className="comparison">
-        <p className="comparison-text" style={{ margin: "2rem" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <img src={after} alt="before"></img>
+      <div className="middle">
+        <q className="quote-text">
+          Echilibrul este starea perfectă a apei liniștite. Să fie acesta
+          modelul nostru.
+        </q>
+        <p className="quote-author">&#8211; Confucius &#8211;</p>
+      </div>
+      <div className="bottom-right">
+        <span></span>
+        <img src={after} alt="after" />
       </div>
     </div>
   </div>

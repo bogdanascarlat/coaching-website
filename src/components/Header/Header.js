@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => (
   <div className="header_container">
     <img src={inspiringPhoto} alt="tree" className="header_background" />
-    <div class="overlay overlay_1">
+    <div class="overlay">
       <h1 class="header_title">
         In toate aspectele vietii noastre, echilibrul este cheia
       </h1>

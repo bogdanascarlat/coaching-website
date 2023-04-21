@@ -5,7 +5,7 @@ import "./Description.css";
 const Description = () => (
   <div className="description wrapper section_padding">
     <div className="wrapper_info">
-      <h1 className="description-h1">Cheia catre o viata mai buna</h1>
+      <h1 className="description-title">Cheia catre o viata mai buna</h1>
       <p className="p__opensans" style={{ margin: "2rem" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -13,7 +13,7 @@ const Description = () => (
         commodo consequat.
       </p>
       <button type="button" className="custom_button">
-        Afla mai multe
+        Afla mai mult
       </button>
     </div>
     <div className="wrapper_img">

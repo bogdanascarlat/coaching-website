@@ -1,25 +1,67 @@
-.comparison-title {
+.container {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15rem;
+  background-color: #ffe8cc;
+}
+.top-left {
+  position: absolute;
+  top: -13rem;
+  left: 3rem;
+  display: inline-block;
+}
+
+.middle {
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  bottom: 6rem;
+  right: 6rem;
+  margin: auto;
   text-align: center;
   justify-content: center;
-  text-transform: uppercase;
-  margin-left: 2rem;
+  background-color: #ffe8cc;
 }
 
-.comparison {
+.bottom-right {
+  position: absolute;
+  bottom: -10rem;
+  right: 3rem;
+  justify-content: center;
+}
+
+.quote-text {
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #ffe8cc;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.quote-author {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ffe8cc;
+}
+
+/* .top-container {
+  width: 60px;
+  text-align: right;
+  display: inline-block;
+} */
+
+.top-text {
+  position: relative;
+  left: 40rem;
+  top: -9rem;
+  width: 25rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.top-wrapper {
   display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-}
-
-.comparison-text {
-  font-size: 2rem;
-}
-
-.wrapper_info {
-  background-color: #fff;
-}
-
-.middle-container {
-  width: 100%;
-  background-color: #fff4e6;
 }
