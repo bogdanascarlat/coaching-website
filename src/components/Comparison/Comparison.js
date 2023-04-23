@@ -64,7 +64,7 @@ const Comparison = () => {
           <p className="quote-author">&#8211; Confucius &#8211;</p>
         </div>
         <div className="bottom-wrapper">
-          {/* <span className="bottom-text-container">
+          <span className="bottom-text-container">
             <h2 className="top-text-title">Dupa ce am lucrat cu un coach:</h2>
             <p className="first-paragraph">
               Am reusit sa gasesc echilibrul intre munca si viata personala. Am
@@ -81,7 +81,7 @@ const Comparison = () => {
               exact ce sa fac si de unde sa incep, macinata fiind de teama ca as
               putea sa imi pierd locul de munca.
             </p>
-          </span> */}
+          </span>
           <div className="bottom-right">
             <img src={after} alt="after" />
           </div>

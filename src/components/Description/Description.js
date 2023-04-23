@@ -6,7 +6,7 @@ const Description = () => (
   <div className="description wrapper section_padding">
     <div className="wrapper_info">
       <h1 className="description-title">Cheia catre o viata mai buna</h1>
-      <p className="p__opensans" style={{ margin: "2rem" }}>
+      <p className="description-content" style={{ margin: "2rem" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

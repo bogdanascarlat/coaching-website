@@ -3,7 +3,7 @@ import "./Questions.css";
 
 const Questions = () => (
   <div className="questions-container">
-    <h1 className="questions-header">Intrebari frecvente</h1>
+    {/* <h1 className="questions-header">Intrebari frecvente</h1>
     <div className="questions">
       <div className="question">
         <p className="q" style={{ margin: "2rem" }}>
@@ -55,7 +55,7 @@ const Questions = () => (
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 

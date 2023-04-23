@@ -18,7 +18,8 @@
 }
 
 .navbar-logo:hover {
-  color: #087f5b;
+  color: var(--color-light-grey);
+  cursor: pointer;
 }
 
 .navbar-links {
@@ -45,9 +46,13 @@
   list-style: none;
 }
 
-.navbar-links li:hover,
-.social-links li:hover {
-  color: var(--color-green);
+.navbar-links li a:hover,
+.social-links li a:hover {
+  color: var(--color-white);
+  background-color: var(--color-dark-grey);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 .social-links li {
   font-size: 2.5rem;

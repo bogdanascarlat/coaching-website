@@ -1,32 +1,96 @@
-.work_section {
+.work-section {
   padding: 5rem;
   /* background-color: var(--color-grey); */
 }
 
-.work {
-  text-align: center;
-  align-items: center;
-  text-transform: uppercase;
+.work-header {
+  margin-bottom: 3rem;
 }
 
-.work_text {
+.work-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
   text-align: center;
-  align-items: center;
-  font-size: 2rem;
 }
 
-.gallery {
+.work-text {
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons-wrapper {
   display: flex;
-  justify-content: space-between;
-}
-
-.gallery img {
-  width: 40rem;
-  height: 35rem;
-}
-
-.gallery_description {
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 2rem;
+}
+
+.buttons-section {
+  background-color: #ffe3e3;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.custom_button1 {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.custom_button2 {
+  background-color: #ffe3e3;
+  color: var(--color-dark-grey);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.custom_button3 {
+  background-color: #ffe3e3;
+  color: var(--color-dark-grey);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.custom_button:hover {
+  background-color: var(--color-light-grey);
+  color: var(--color-grey);
+}
+
+.active {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
 }

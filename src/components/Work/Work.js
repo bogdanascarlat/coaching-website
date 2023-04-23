@@ -1,35 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import work from "../../assets/work.jpg";
 import group from "../../assets/group.jpg";
 import workshop from "../../assets/workshop.jpg";
 import "./Work.css";
+import OneToOne from "./OneToOne/OneToOne";
+import Group from "./Group/Group";
+import Coaching from "./Coaching/Coaching";
 
-const Work = () => (
-  <div className="work_section">
-    <div className="">
-      <h1 className="work">Cum vom lucra impreuna?</h1>
-      <p className="work_text" style={{ margin: "2rem" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <div className="gallery">
-        <div>
-          <p className="gallery_description">One to one</p>
-          <img src={work} alt="one-to-one"></img>
+function Work() {
+  const [activeComponent, setActiveComponent] = useState(null);
+  const [activeButton, setActiveButton] = useState("oneToOne");
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+    switch (button) {
+      case "oneToOne":
+        setActiveComponent(<OneToOne />);
+        break;
+      case "group":
+        setActiveComponent(<Group />);
+        break;
+      case "coaching":
+        setActiveComponent(<Coaching />);
+        break;
+      default:
+        setActiveComponent(null);
+    }
+  };
+
+  const buttonClass = (button) =>
+    button === activeButton ? "custom_button1 active" : "custom_button2";
+
+  return (
+    <div className="work-section">
+      <div className="work-header">
+        <h1 className="work-title">Cum vom lucra impreuna?</h1>
+        <p className="work-text">
+          Te voi ajuta sa identifici cea mai buna optiune in functie de nevoile
+          tale. Mai jos poti regasi detalii pentru fiecare in parte.
+        </p>
+      </div>
+      <div className="buttons-wrapper">
+        <div className="buttons-section">
+          <button
+            onClick={() => handleButtonClick("oneToOne")}
+            className={buttonClass("oneToOne")}
+          >
+            One-to-one
+          </button>
+          <button
+            onClick={() => handleButtonClick("group")}
+            className={buttonClass("group")}
+          >
+            Group
+          </button>
+          <button
+            onClick={() => handleButtonClick("coaching")}
+            className={buttonClass("coaching")}
+          >
+            Coaching
+          </button>
         </div>
-        <div>
-          <p className="gallery_description">Grupuri</p>
-          <img src={group} alt="group"></img>
-        </div>
-        <div>
-          <p className="gallery_description">Workshop</p>
-          <img src={workshop} alt="workshop"></img>
-        </div>
+        {activeComponent}
       </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default Work;

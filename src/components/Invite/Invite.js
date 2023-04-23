@@ -3,7 +3,7 @@ import "./Invite.css";
 
 const Invite = () => (
   <div className="invite_section">
-    <div className="invite">
+    {/* <div className="invite">
       <h1 className="invite_header">
         Haide sa ne intalnim pentru a ne cunoaste mai bine
       </h1>
@@ -18,7 +18,7 @@ const Invite = () => (
         </a>
         &nbsp;pentru a programa sedinta.
       </p>
-    </div>
+    </div> */}
   </div>
 );
 

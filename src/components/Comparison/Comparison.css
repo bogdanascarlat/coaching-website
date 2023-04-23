@@ -4,14 +4,15 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15rem;
+  margin-bottom: 23rem;
   background-color: #ffe8cc;
 }
+
 .top-left {
   position: absolute;
   top: -6rem;
   left: 3rem;
-  display: inline-block;
+  background-color: #ffe8cc;
 }
 
 .middle {
@@ -30,7 +31,6 @@
   position: absolute;
   bottom: -18rem;
   right: 3rem;
-  display: inline-block;
 }
 
 .quote-text {
@@ -49,21 +49,28 @@
 
 .top-text-container {
   position: relative;
-  top: -5rem;
+  top: -3rem;
   right: -40rem;
+  width: 90%;
 }
 
-/* .bottom-text-container {
-  position: relative;
-  bottom: -25rem;
-  right: 20rem;
-} */
+.bottom-text-container {
+  position: absolute;
+  bottom: -15rem;
+  right: -23rem;
+  width: 90%;
+}
 
 .top-text-title {
   position: relative;
-  /* top: -7rem;
-  left: 40rem;
-  width: 80%; */
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.bottom-text-title {
+  position: relative;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -72,19 +79,19 @@
 
 .top-text-content {
   position: relative;
-  /* left: 40rem;
-  top: -5rem;
-  width: 80%; */
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.bottom-text-content {
+  position: relative;
   font-size: 18px;
   font-weight: 600;
   display: inline-block;
 }
 
 .top-wrapper {
-  display: flex;
-}
-
-.bottom-wrapper {
   display: flex;
 }
 
