@@ -4,10 +4,10 @@ import group from "../../../assets/group.jpg";
 
 const Group = () => (
   <div className="group_section section_padding">
-    <div className="left-container">
+    <div className="group-left-container">
       <img src={group} alt="group" className="left-image" />
     </div>
-    <div className="right-container">
+    <div className="group-right-container">
       <h2 className="group-title">Group</h2>
       <p>
         Sesiunea de coaching de grup este o sesiune ghidata de mine intr-o

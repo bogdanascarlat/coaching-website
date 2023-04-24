@@ -1,5 +1,8 @@
 .description {
   margin-bottom: 15rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .description-title {
@@ -9,11 +12,58 @@
 }
 
 .description-content {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
+  margin-bottom: 1.3rem;
 }
 
 .wrapper_info {
   background-color: #fff5f5 !important;
-  margin-left: auto !important;
+  margin-left: 15rem;
+  width: 50%;
+}
+
+.custom_button:hover {
+  background-color: var(--color-color-light-grey);
+  color: var(--color-white);
+}
+
+.wrapper_img {
+  margin-right: 10rem;
+}
+
+.description-content hr {
+  width: 500px;
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+.description_custom_button {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.description_custom_button:hover {
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

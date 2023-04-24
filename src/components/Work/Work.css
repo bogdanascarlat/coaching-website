@@ -1,5 +1,6 @@
 .work-section {
   padding: 5rem;
+  margin-bottom: 10rem;
   /* background-color: var(--color-grey); */
 }
 
@@ -32,7 +33,7 @@
 }
 
 .buttons-section {
-  background-color: #ffe3e3;
+  background-color: #ffe8cc;
   border-radius: 25px;
   margin-bottom: 3rem;
 }
@@ -50,11 +51,11 @@
   border: none;
   outline: none;
   cursor: pointer;
-  width: 10rem;
+  width: 15rem;
 }
 
 .custom_button2 {
-  background-color: #ffe3e3;
+  background-color: #ffe8cc;
   color: var(--color-dark-grey);
   font-family: var(--font-base);
   font-weight: 700;
@@ -66,14 +67,14 @@
   border: none;
   outline: none;
   cursor: pointer;
-  width: 10rem;
+  width: 15rem;
 }
 
 .custom_button3 {
-  background-color: #ffe3e3;
-  color: var(--color-dark-grey);
+  background-color: #ffe8cc;
+  color: var(--color-black);
   font-family: var(--font-base);
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: 16px;
@@ -82,7 +83,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  width: 10rem;
+  width: 15rem;
 }
 
 .custom_button:hover {

@@ -1,14 +1,14 @@
 import React from "react";
 import "./Coaching.css";
-import coaching from "../../../assets/coaching.jpg";
+import coaching from "../../../assets/meeting.jpg";
 
 const Coaching = () => (
   <div className="coaching_section section_padding">
-    <div className="left-container">
+    <div className="coaching-left-container">
       <img src={coaching} alt="coaching" className="left-image" />
     </div>
-    <div className="right-container">
-      <h2 className="coaching-title">Coaching</h2>
+    <div className="coaching-right-container">
+      <h2 className="coaching-title">Executive Coaching</h2>
       <p>
         Serviciile de executive coaching sunt disponibile pentru o gama larga de
         teme, adaptate dupa nevoile si obiectivele specifice ale echipei sau
@@ -17,7 +17,7 @@ const Coaching = () => (
         subiectului si sa le permita sa isi dezvolte abilitatile intr-un mediu
         sigur si sustinator.
       </p>
-      <p>Iata cateva exemple:</p>
+      <p className="examples-paragraph">Iata cateva exemple:</p>
       <dl>
         <dt>Leadership si management </dt>
         <dd>

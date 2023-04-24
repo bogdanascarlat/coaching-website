@@ -4,10 +4,10 @@ import oneToOne from "../../../assets/one-to-one.jpg";
 
 const OneToOne = () => (
   <div className="oneToOne_section section_padding">
-    <div className="left-container">
+    <div className="oneToOne-left-container">
       <img src={oneToOne} alt="one to one" className="left-image" />
     </div>
-    <div className="right-container">
+    <div className="oneToOne-right-container">
       <h2 className="oneToOne-title">One-to-One</h2>
       <p>
         Vom stabili impreuna obiectivele tale si vom dezvolta un plan

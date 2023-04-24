@@ -48,7 +48,7 @@
 
 .footer .box-container .box .links a:hover {
   text-decoration: underline;
-  color: var(--green);
+  /* color: var(--green); */
 }
 
 .social-links {
@@ -61,6 +61,6 @@
   justify-content: left;
 }
 
-.social-links li:hover {
+/* .social-links li:hover {
   color: var(--color-green);
-}
+} */

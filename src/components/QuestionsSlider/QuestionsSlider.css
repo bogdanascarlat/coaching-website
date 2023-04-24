@@ -23,7 +23,7 @@
 }
 
 .slider p {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5;
   margin-bottom: 24px;
 }
@@ -38,7 +38,7 @@
 .slider-buttons button {
   font-size: 16px;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: 1px 18px;
   border-radius: 4px;
   border: none;
   background-color: #1a202c;
@@ -46,6 +46,7 @@
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   width: 10rem;
+  height: 4rem;
 }
 
 .slider-buttons button:hover {

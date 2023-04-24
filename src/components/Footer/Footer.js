@@ -15,10 +15,9 @@ const Footer = () => (
           Roxana Dumitrescu
         </a>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          consectetur aperiam sed, dolorem magnam sequi inventore harum, autem
-          vitae in consequatur accusantium quidem totam dolor voluptates
-          delectus. Similique, totam at.
+          Te ghidez sa identifici sursele de stres si sa dezvoltam impreuna
+          strategii eficiente in gestionarea acestuia, pentru a gasi echilibru
+          in toate aspectele vietii tale.
         </p>
         <ul className="social-links">
           <li className="p__opensans">

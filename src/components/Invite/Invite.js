@@ -1,24 +1,28 @@
 import React from "react";
+import invite from "../../assets/invite.jpg";
 import "./Invite.css";
 
 const Invite = () => (
   <div className="invite_section">
-    {/* <div className="invite">
-      <h1 className="invite_header">
-        Haide sa ne intalnim pentru a ne cunoaste mai bine
-      </h1>
-      <p className="invite_text" style={{ margin: "2rem" }}>
-        Iti pun la dispozitie o sedinta gratuita pentru a ne cunoaste si a
-        analiza ce solutii personalizate ti s-ar potrivi cel mai bine.
-      </p>
-      <p className="link">
-        Click&nbsp;
-        <a href="#" className="link_url">
-          aici
+    <div className="left-container">
+      <img src={invite} alt="one to one" className="left-image" />
+    </div>
+
+    <div className="right-container">
+      <h2 className="invite-logo">Roxana Dumitrescu</h2>
+      <div className="invite-content">
+        <h3 className="invite-title">
+          Esti pregatit pentru cea mai interesanta experienta de coaching?
+        </h3>
+        <p>
+          Te invit la o sedinta gratuita pentru a descoperi impreuna cum te pot
+          ghida.
+        </p>
+        <a href="https://google.com" className="invite_custom_button">
+          Programeaza o sedinta
         </a>
-        &nbsp;pentru a programa sedinta.
-      </p>
-    </div> */}
+      </div>
+    </div>
   </div>
 );
 

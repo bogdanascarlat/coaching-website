@@ -65,7 +65,9 @@ const Comparison = () => {
         </div>
         <div className="bottom-wrapper">
           <span className="bottom-text-container">
-            <h2 className="top-text-title">Dupa ce am lucrat cu un coach:</h2>
+            <h2 className="bottom-text-title">
+              Dupa ce am lucrat cu un coach:
+            </h2>
             <p className="first-paragraph">
               Am reusit sa gasesc echilibrul intre munca si viata personala. Am
               reusit sa stabilesc limite clare si sanatoase la locul de munca.
@@ -75,11 +77,12 @@ const Comparison = () => {
               citesc si am timp pentru familia mea.
             </p>
             <p className="second-paragraph">
-              Imi era din ce in ce mai greu sa ma concentrez, dar tot imi
-              ignoram sanatatea si puneam munca pe primul loc. Imi era frica sa
-              ma aleg pe mine. Stiam ca trebuie sa schimb ceva, dar nu stiam
-              exact ce sa fac si de unde sa incep, macinata fiind de teama ca as
-              putea sa imi pierd locul de munca.
+              Am reusit sa identific radacina stresului, ceea ce a condus si la
+              o comunicare mai buna cu cei din jur si la un mediu de lucru mai
+              sanatos. Acum pot fi pe deplin prezenta atat in viata personala
+              cat si cea profesionala, iar productivitatea mea a crescut
+              semnificativ. Acum am o viata echilibrata si implinita si asta ma
+              face fericita.
             </p>
           </span>
           <div className="bottom-right">

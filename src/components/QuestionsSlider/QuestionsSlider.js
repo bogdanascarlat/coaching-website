@@ -23,10 +23,10 @@ const QuestionsSlider = ({ slides }) => {
       </div>
       <div className="slider-buttons">
         <button onClick={goToPreviousSlide} className="custom_button">
-          Previous
+          Anterioara
         </button>
         <button onClick={goToNextSlide} className="custom_button">
-          Next
+          Urmatoare
         </button>
       </div>
     </div>

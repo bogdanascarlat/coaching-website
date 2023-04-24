@@ -1,8 +1,9 @@
 .heading {
   text-align: center;
   justify-content: center;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  font-size: 2.8rem !important;
+  font-weight: bold !important;
+  margin-bottom: 3.5rem;
 }
 
 .contact {
@@ -55,7 +56,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  width: 10rem;
+  width: 13rem;
 }
 
 .btn:hover {

@@ -12,19 +12,24 @@ function Work() {
   const [activeButton, setActiveButton] = useState("oneToOne");
 
   const handleButtonClick = (button) => {
-    setActiveButton(button);
-    switch (button) {
-      case "oneToOne":
-        setActiveComponent(<OneToOne />);
-        break;
-      case "group":
-        setActiveComponent(<Group />);
-        break;
-      case "coaching":
-        setActiveComponent(<Coaching />);
-        break;
-      default:
-        setActiveComponent(null);
+    if (button === activeButton) {
+      setActiveButton(null);
+      setActiveComponent(null);
+    } else {
+      setActiveButton(button);
+      switch (button) {
+        case "oneToOne":
+          setActiveComponent(<OneToOne />);
+          break;
+        case "group":
+          setActiveComponent(<Group />);
+          break;
+        case "coaching":
+          setActiveComponent(<Coaching />);
+          break;
+        default:
+          setActiveComponent(null);
+      }
     }
   };
 
@@ -58,7 +63,7 @@ function Work() {
             onClick={() => handleButtonClick("coaching")}
             className={buttonClass("coaching")}
           >
-            Coaching
+            Executive Coaching
           </button>
         </div>
         {activeComponent}
