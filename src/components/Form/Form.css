@@ -7,7 +7,7 @@
 }
 
 .contact {
-  width: 50%;
+  width: 45%;
   margin: auto;
   padding-bottom: 5rem;
 }
@@ -16,7 +16,7 @@
   text-align: center;
   padding: 1rem;
   border: 0.3rem solid var(--color-light-grey);
-  border-radius: 55px;
+  border-radius: 30px;
 }
 
 .contact form .inputBox {

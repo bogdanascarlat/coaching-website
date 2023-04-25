@@ -18,7 +18,7 @@ const Invite = () => (
           Te invit la o sedinta gratuita pentru a descoperi impreuna cum te pot
           ghida.
         </p>
-        <a href="https://google.com" className="invite_custom_button">
+        <a href="https://bit.ly/3owcQLe" className="invite_custom_button">
           Programeaza o sedinta
         </a>
       </div>
