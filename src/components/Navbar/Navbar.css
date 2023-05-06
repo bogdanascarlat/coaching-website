@@ -82,7 +82,6 @@
 
 .navbar-smallscreen_overlay .overlay__close {
   font-size: 27px;
-  color: var(--color-golden);
   cursor: pointer;
 
   position: absolute;

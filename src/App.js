@@ -8,6 +8,7 @@ import Invite from "./components/Invite/Invite";
 import QuestionsSlider from "./components/QuestionsSlider/QuestionsSlider";
 import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
+import "./styles/tailwind.css";
 
 const App = () => {
   const slides = [
