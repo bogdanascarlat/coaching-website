@@ -2,13 +2,26 @@ import React from "react";
 import "./Form.css";
 
 const Form = () => (
-  <div className="form-container">
-    <div className="contact">
-      <h1 className="heading">Trimite un mesaj</h1>
-      <form action="">
-        <div className="inputBox">
-          <input type="text" placeholder="nume" />
-          <input type="email" placeholder="email" />
+  <div class="w-[50%] mx-auto pb-20">
+    <div class="w-30">
+      <h1 class="text-center justify-center text-4xl font-bold mb-14">
+        Trimite un mesaj
+      </h1>
+      <form
+        action=""
+        class="text-center p-4 border-8 border-[#495057] rounded-3xl"
+      >
+        <div class="flex justify-around flex-wrap">
+          <input
+            type="text"
+            placeholder="nume"
+            class="p-6 text-base border-solid border-2 border-gray-300 rounded-md w-1/2 my-4"
+          />
+          <input
+            type="text"
+            placeholder="email"
+            class="p-6 text-base border-solid border-2 border-gray-300 rounded-md w-1/2 my-4"
+          />
         </div>
         <textarea
           placeholder="mesaj"
@@ -16,8 +29,13 @@ const Form = () => (
           id=""
           cols="30"
           rows="10"
+          class="p-4 text-lg font-normal leading-6 tracking-wide text-gray-700 placeholder-gray-400 border border-gray-400 rounded-lg resize-none w-full h-40 md:h-60 lg:h-72 "
         ></textarea>
-        <input type="submit" value="TRIMITE MESAJUL" className="btn" />
+        <input
+          type="submit"
+          value="TRIMITE MESAJUL"
+          class="bg-[#343a40] text-white font-bold tracking-wide uppercase py-2 px-6 rounded-2xl cursor-pointer w-52 hover:bg-[#495057] hover:text-[#f0f0f0] text-base"
+        />
       </form>
     </div>
   </div>

@@ -1,4 +1,4 @@
-.description_section {
+/* .description_section {
   margin-bottom: 35rem;
   display: flex;
   background-color: var(--color-dark-grey);
@@ -58,34 +58,4 @@
   width: 500px;
   margin-left: 0;
   margin-top: 5px;
-}
-
-/* .description_custom_button {
-  background-color: var(--color-dark-grey);
-  color: var(--color-white);
-  font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.description_custom_button:hover {
-  background-color: var(--color-light-grey);
-  color: var(--color-white);
-  font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
 } */

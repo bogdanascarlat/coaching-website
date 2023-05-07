@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   border-top: 0.5rem solid rgba(0, 0, 0, 0.1);
   background-color: #fff5f5;
 }
@@ -13,7 +13,6 @@
 }
 
 .footer .box-container .box {
-  /* padding: 1rem 0; */
   flex: 1 1 25rem;
 }
 
@@ -49,15 +48,13 @@
 
 .footer .box-container .box .links a:hover {
   text-decoration: underline;
-  /* color: var(--green); */
 }
 
 .social-links {
-  /* flex: 1; */
   display: flex;
   gap: 1rem;
   font-size: 2rem;
   list-style: none;
   align-items: flex-start;
   justify-content: left;
-}
+} */

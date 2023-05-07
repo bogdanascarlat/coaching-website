@@ -8,10 +8,10 @@ import {
 import "./Footer.css";
 
 const Footer = () => (
-  <div className="footer">
-    <div className="box-container">
-      <div className="box">
-        <a href="#" className="navbar-logo ">
+  <div class="border-t-4 border-[rgba(0, 0, 0, 0.1)] bg-[#fff5f5]">
+    <div class="flex flex-wrap justify-between ml-10 mr-10 mt-4 box-container">
+      <div class="flex-wrap md:flex-1 md:flex-grow-0 w-[25rem]">
+        <a href="#" class="navbar-logo ">
           Roxana Dumitrescu
         </a>
         <p>
@@ -19,24 +19,36 @@ const Footer = () => (
           strategii eficiente in gestionarea acestuia, pentru a gasi echilibru
           in toate aspectele vietii tale.
         </p>
-        <ul className="social-links">
-          <li className="p__opensans">
-            <a href="#">
+        <ul class="flex gap-4 list-none items-start justify-start">
+          <li class="p__opensans">
+            <a
+              href="#"
+              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+            >
               <FaLinkedin />
             </a>
           </li>
-          <li className="p__opensans">
-            <a href="#">
+          <li class="p__opensans">
+            <a
+              href="#"
+              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+            >
               <FaFacebookSquare />
             </a>
           </li>
-          <li className="p__opensans">
-            <a href="#">
+          <li class="p__opensans">
+            <a
+              href="#"
+              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+            >
               <FaInstagramSquare />
             </a>
           </li>
-          <li className="p__opensans">
-            <a href="#">
+          <li class="p__opensans">
+            <a
+              href="#"
+              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+            >
               <FaTwitterSquare />
             </a>
           </li>
@@ -44,34 +56,34 @@ const Footer = () => (
       </div>
 
       <div class="box">
-        <h3>Adresa</h3>
+        <h3 class="text-2xl text-black">Adresa</h3>
         <div class="address">
-          <p>Bucuresti</p>
-          <p>
+          <p class="text-lg text-gray-600 py-2">Bucuresti</p>
+          <p class="text-lg text-gray-600 py-2">
             <i>Telefon:</i> <b>(+40)74 123 4560</b>
           </p>
-          <p>
+          <p class="text-lg text-gray-600 py-2">
             <i>Email:</i> <b>email@gmail.com</b>
           </p>
         </div>
       </div>
 
       <div class="box">
-        <h3>Linkuri</h3>
-        <div class="links">
-          <a href="#">
+        <h3 class="text-2xl text-black">Linkuri</h3>
+        <div class="py-4">
+          <a href="#" class="block py-2 text-lg text-gray-700 hover:underline">
             <i class="fas fa-arrow-right"></i>Acasa
           </a>
-          <a href="#">
+          <a href="#" class="block py-2 text-lg text-gray-700 hover:underline">
             <i class="fas fa-arrow-right"></i>Despre
           </a>
-          <a href="#">
+          <a href="#" class="block py-2 text-lg text-gray-700 hover:underline">
             <i class="fas fa-arrow-right"></i>Produse
           </a>
-          <a href="#">
+          <a href="#" class="block py-2 text-lg text-gray-700 hover:underline">
             <i class="fas fa-arrow-right"></i>Evenimente si Workshopuri
           </a>
-          <a href="#">
+          <a href="#" class="block py-2 text-lg text-gray-700 hover:underline">
             <i class="fas fa-arrow-right"></i>Contact
           </a>
         </div>

@@ -6,16 +6,16 @@ import after from "../../assets/after.jpg";
 
 const Comparison = () => {
   return (
-    <div class="w-full h-96 relative mx-auto mb-80 pt-40">
-      <div class="flex absolute left-20 -top-80 bg-transparent">
+    <div class="w-full h-96 relative mx-auto mb-80 pt-8">
+      <div class="flex absolute left-10 -top-[75%] bg-transparent">
         <div class="w-full lg:w-1/2 flex justify-center items-center mr-20 bg-transparent">
           <img src={before} alt="before" class="h-auto max-w-full z-10" />
         </div>
         <div class="w-full lg:w-1/2 mr-20 mt-10">
-          <h2 class="text-2xl font-semibold mb-4">
+          <h2 class="text-2xl font-bold mb-4">
             Inainte de a apela la un coach:
           </h2>
-          <div class="max-w-2xl mx-auto text-left overflow-y-scroll h-48">
+          <div class="max-w-2xl mx-auto text-left h-40 overflow-y-scroll">
             <p class="text-lg font-semibold mb-4">
               Ma luptam cu sentimente coplesitoare de stres, anxietate si
               epuizare. In calitate de profesionist, m-am trezit adesea ca imi
@@ -46,10 +46,10 @@ const Comparison = () => {
         </div>
       </div>
 
-      <div class="absolute right-20 -bottom-80 bg-transparent">
+      <div class="absolute right-20 -bottom-[75%] bg-transparent">
         <div class="flex items-center bg-transparent">
           <div class="max-w-2xl mx-auto text-left h-40 overflow-y-scroll">
-            <h2 class="text-2xl font-semibold mb-4">
+            <h2 class="text-2xl font-bold mb-4">
               Dupa ce am lucrat cu un coach:
             </h2>
             <p class="text-lg font-semibold mb-4">
