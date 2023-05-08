@@ -3,17 +3,19 @@ import "./Group.css";
 import group from "../../../assets/group.jpg";
 
 const Group = () => (
-  <div className="group_section section_padding">
-    <div className="group-left-container">
-      <img src={group} alt="group" className="left-image" />
+  <div class="grid grid-cols-2 w-[90%] ml-auto mr-auto mb-60 bg-[#343a40]">
+    <div class="flex-1 bg-dark-grey bg-[#343a40]">
+      <img src={group} alt="group" class="p-16 bg-[#343a40] h-full" />
     </div>
-    <div className="group-right-container">
-      <h2 className="group-title">Group</h2>
-      <p>
+    <div class="flex-1 p-5 bg-[#ffe8cc] flex flex-col justify-center items-start ml-auto mr-auto">
+      <h2 class="group-title text-2xl font-bold mb-4 pt-4 bg-[#ffe8cc]">
+        Group
+      </h2>
+      <p class="bg-[#ffe8cc] mb-2">
         Sesiunea de coaching de grup este o sesiune ghidata de mine intr-o
         discutie structurata cu tematica setata anterior.
       </p>
-      <p>
+      <p class="bg-[#ffe8cc] mb-2">
         In general, astfel de sesiuni de coaching sunt proiectate sa fie
         interactiva si implica o combinatie de prezentare de informatii,
         discutii si exercitii. De obicei, tema sau subiectul este ales in
@@ -22,12 +24,12 @@ const Group = () => (
         de lider, cresterea increderii in sine, managementul timpului, setarea
         de limite sanatoase, si multe altele.
       </p>
-      <p>
+      <p class="bg-[#ffe8cc] mb-2">
         In timpul sesiunii voi adresa intrebari deschise, voi asculta activ, voi
         indruma discutiile si voi oferi oportunitatea participantilor de a
         invata din experienta altora si de a gasi solutii.
       </p>
-      <p>
+      <p class="bg-[#ffe8cc] mb-2">
         In general, sesiunile de coaching de grup sunt ideale pentru persoanele
         care cauta o abordare mai accesibila si mai putin intensive de coaching,
         dar care isi doresc sa primeasca sprijinul si ghidarea unui coach si sa

@@ -7,4 +7,34 @@
   font-family: "Dancing Script", cursive;
   /* specify fallback fonts in case the font fails to load */
   font-family: "Dancing Script", cursive, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.logo:hover {
+  color: #495057;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .navbar-links,
+  .social-links,
+  .language {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .social-links,
+  .language {
+    display: none;
+  }
 }

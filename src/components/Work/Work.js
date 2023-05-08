@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import work from "../../assets/work.jpg";
-import group from "../../assets/group.jpg";
-import workshop from "../../assets/workshop.jpg";
 import "./Work.css";
 import OneToOne from "./OneToOne/OneToOne";
 import Group from "./Group/Group";
@@ -9,7 +6,7 @@ import Coaching from "./Coaching/Coaching";
 
 function Work() {
   const [activeComponent, setActiveComponent] = useState(null);
-  const [activeButton, setActiveButton] = useState("oneToOne");
+  const [activeButton, setActiveButton] = useState(null);
 
   const handleButtonClick = (button) => {
     if (button === activeButton) {
@@ -34,34 +31,38 @@ function Work() {
   };
 
   const buttonClass = (button) =>
-    button === activeButton ? "custom_button1 active" : "custom_button2";
+    button === activeButton && activeButton !== null
+      ? "font-bold tracking-wide text-[#ffffff] bg-[#343a40] text-sm rounded-full py-2 px-4 focus:outline-none"
+      : "font-bold tracking-wide bg-[#ffe8cc] text-[#343a40] text-sm rounded-full py-2 px-4 focus:outline-none";
 
   return (
-    <div className="work-section">
-      <div className="work-header">
-        <h1 className="work-title">Cum vom lucra impreuna?</h1>
-        <p className="work-text">
+    <div class="py-20 mt-96">
+      <div class="mb-3">
+        <h1 class="text-3xl font-bold mb-3 text-center">
+          Cum vom lucra impreuna?
+        </h1>
+        <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5">
           Te voi ajuta sa identifici cea mai buna optiune in functie de nevoile
           tale. Mai jos poti regasi detalii pentru fiecare in parte.
         </p>
       </div>
-      <div className="buttons-wrapper">
-        <div className="buttons-section">
+      <div class="flex flex-col justify-center items-center">
+        <div class="bg-[#ffe8cc] rounded-2xl mb-6">
           <button
             onClick={() => handleButtonClick("oneToOne")}
-            className={buttonClass("oneToOne")}
+            class={buttonClass("oneToOne")}
           >
             One-to-one
           </button>
           <button
             onClick={() => handleButtonClick("group")}
-            className={buttonClass("group")}
+            class={buttonClass("group")}
           >
             Group
           </button>
           <button
             onClick={() => handleButtonClick("coaching")}
-            className={buttonClass("coaching")}
+            class={buttonClass("coaching")}
           >
             Executive Coaching
           </button>

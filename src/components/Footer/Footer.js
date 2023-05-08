@@ -8,10 +8,10 @@ import {
 import "./Footer.css";
 
 const Footer = () => (
-  <div class="border-t-4 border-[rgba(0, 0, 0, 0.1)] bg-[#fff5f5]">
+  <div class="border-t-2 border-[#495057] bg-[#fff5f5]">
     <div class="flex flex-wrap justify-between ml-10 mr-10 mt-4 box-container">
-      <div class="flex-wrap md:flex-1 md:flex-grow-0 w-[25rem]">
-        <a href="#" class="navbar-logo ">
+      <div class="w-full h-full md:w-1/3">
+        <a href="#" class="logo ">
           Roxana Dumitrescu
         </a>
         <p>
@@ -19,35 +19,35 @@ const Footer = () => (
           strategii eficiente in gestionarea acestuia, pentru a gasi echilibru
           in toate aspectele vietii tale.
         </p>
-        <ul class="flex gap-4 list-none items-start justify-start">
-          <li class="p__opensans">
+        <ul class="flex gap-4 list-none items-start justify-start mt-5">
+          <li>
             <a
               href="#"
-              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+              class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
             >
               <FaLinkedin />
             </a>
           </li>
-          <li class="p__opensans">
+          <li>
             <a
               href="#"
-              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+              class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
             >
               <FaFacebookSquare />
             </a>
           </li>
-          <li class="p__opensans">
+          <li>
             <a
               href="#"
-              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+              class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
             >
               <FaInstagramSquare />
             </a>
           </li>
-          <li class="p__opensans">
+          <li>
             <a
               href="#"
-              class="block py-2 text-lg text-gray-700 hover:bg-[#343a40]"
+              class="block py-2 text-3xl text-[#343a40] hover:text-[#495057]"
             >
               <FaTwitterSquare />
             </a>
@@ -55,9 +55,9 @@ const Footer = () => (
         </ul>
       </div>
 
-      <div class="box">
-        <h3 class="text-2xl text-black">Adresa</h3>
-        <div class="address">
+      <div class="w-full h-full md:w-1/6 flex flex-col text-left">
+        <h3 class="text-2xl text-black mt-5 text-left">Adresa</h3>
+        <div class="flex flex-col text-left">
           <p class="text-lg text-gray-600 py-2">Bucuresti</p>
           <p class="text-lg text-gray-600 py-2">
             <i>Telefon:</i> <b>(+40)74 123 4560</b>
@@ -68,9 +68,9 @@ const Footer = () => (
         </div>
       </div>
 
-      <div class="box">
-        <h3 class="text-2xl text-black">Linkuri</h3>
-        <div class="py-4">
+      <div class="w-full h-full md:w-1/6 flex flex-col text-left">
+        <h3 class="text-2xl text-black text-left">Linkuri</h3>
+        <div class="flex flex-col text-left">
           <a href="#" class="block py-2 text-lg text-gray-700 hover:underline">
             <i class="fas fa-arrow-right"></i>Acasa
           </a>
@@ -87,6 +87,26 @@ const Footer = () => (
             <i class="fas fa-arrow-right"></i>Contact
           </a>
         </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center mt-10 mb-5">
+      <div class="flex justify-between gap-10">
+        <span>
+          <a
+            href=""
+            class="font-bold text-[#343a40] hover:text-[#495057] hover:underline"
+          >
+            Politica de confidentialitate
+          </a>
+        </span>
+        <span>
+          <a
+            href=""
+            class="font-bold text-[#343a40] hover:text-[#495057] hover:underline"
+          >
+            Termeni si conditii
+          </a>
+        </span>
       </div>
     </div>
   </div>

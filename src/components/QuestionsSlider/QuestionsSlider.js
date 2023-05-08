@@ -16,7 +16,7 @@ const QuestionsSlider = ({ slides }) => {
 
   return (
     <div class="flex flex-col items-center text-center mx-auto mb-40 max-w-screen-lg">
-      <h2 class="text-5xl font-bold pt-1">Intrebari frecvente</h2>
+      <h2 class="text-3xl font-bold mb-3 text-center">Intrebari frecvente</h2>
       <div class="h-60 flex flex-col justify-center items-center slider-content overflow-y-auto">
         <h2 class="text-2xl font-bold mb-4 mt-10">{title}</h2>
         <p class="text-lg leading-relaxed mb-6">{content}</p>
