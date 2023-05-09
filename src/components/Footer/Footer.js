@@ -113,3 +113,21 @@ const Footer = () => (
 );
 
 export default Footer;
+
+function compareTriplets(a, b) {
+  let sum1 = 0;
+  let sum2 = 0;
+  let ar = [];
+
+  for (let i = 0; i <= a.length - 1; i++) {
+    for (let i = 0; i <= b.length - 1; i++) {
+      if (a[i] > b[i]) {
+        sum1 += 1;
+      } else if (a[i] < b[i]) {
+        sum2 += 1;
+      }
+    }
+  }
+  ar = [sum1, sum2];
+}
+compareTriplets([1, 2, 3], [3, 2, 1]);

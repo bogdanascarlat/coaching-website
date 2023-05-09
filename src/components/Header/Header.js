@@ -10,20 +10,24 @@ const Header = () => {
   };
 
   return (
-    <div class="grid grid-cols-2 gap-4 w-[90%] ml-auto mr-auto mt-[5rem]">
-      <img src={inspiringPhoto} alt="tree" class="w-[35rem] mr-[5rem]" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] ml-auto mr-auto mt-[5rem]">
+      <img
+        src={inspiringPhoto}
+        alt="tree"
+        class="w-full md:w-[35rem] mr-[5rem] rounded-lg"
+      />
       <div class="justify-center items-center my-auto">
-        <h1 class="text-4xl font-bold mb-20 leading-9">
+        <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3">
           In toate aspectele vietii noastre, echilibrul este cheia
         </h1>
-        <p class="text-lg mb-5 leading-relaxed">
+        <p class="text-lg mb-5 leading-relaxed sm:text-base">
           Te ghidez sa identifici sursele de stres si sa dezvoltam impreuna
           strategii eficiente in gestionarea acestuia, pentru a gasi echilibru
           in toate aspectele vietii tale.
         </p>
         <button
           type="button"
-          class="bg-[#343a40] text-white font-bold tracking-wider text-sm rounded-md py-2 px-4 hover:bg-[#495057]"
+          class="bg-[#343a40] text-white font-bold tracking-wider text-sm rounded-md py-2 px-4 hover:bg-[#495057] sm:text-base"
           onClick={toggleNewText}
         >
           {showNewText ? "Ascunde" : "Afla mai mult"}

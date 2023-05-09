@@ -3,12 +3,13 @@ import "./Coaching.css";
 import coaching from "../../../assets/meeting.jpg";
 
 const Coaching = () => (
-  <div class="grid grid-cols-2 w-[90%] h-80 ml-auto mr-auto mb-60 bg-[#343a40]">
+  <div className="coaching-section grid grid-cols-1 md:grid-cols-2 w-[90%] h-80 ml-auto mr-auto mb-40 bg-[#343a40]">
     <div class="flex-1 bg-dark-grey bg-[#343a40] h-full">
       <img src={coaching} alt="coaching" class="p-16 bg-[#343a40]" />
     </div>
-    <div class="flex-1 p-5 bg-[#ffe8cc] justify-center items-start ml-auto mr-auto overflow-y-scroll h-full">
-      <h2 class="group-title text-2xl font-bold mb-4 pt-4 bg-[#ffe8cc]">
+
+    <div class="p-5 bg-[#ffe8cc] flex flex-col justify-center items-start ml-auto mr-auto h-full overflow-y-scroll">
+      <h2 className="coaching-title text-2xl font-bold mt-80 mb-5 pt-4 bg-[#ffe8cc]">
         Executive Coaching
       </h2>
       <p class="bg-[#ffe8cc] mb-2">

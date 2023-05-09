@@ -5,7 +5,6 @@
 
 .logo {
   font-family: "Dancing Script", cursive;
-  /* specify fallback fonts in case the font fails to load */
   font-family: "Dancing Script", cursive, sans-serif;
   display: flex;
   justify-content: flex-start;
@@ -16,6 +15,14 @@
 .logo:hover {
   color: #495057;
   cursor: pointer;
+}
+
+@media screen and (max-width: 794px) {
+  .logo {
+    font-size: 1.5rem;
+    margin-right: 7rem;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -36,5 +43,47 @@
   .social-links,
   .language {
     display: none;
+  }
+}
+
+/* For medium and small screens */
+@media (max-width: 768px) {
+  .overflow-y-scroll {
+    overflow-y: visible;
+  }
+
+  .coaching-section {
+    margin-bottom: 50rem;
+  }
+
+  .coaching-title {
+    margin-top: 20px;
+  }
+
+  .work-section {
+    margin-top: 20rem;
+  }
+
+  .questions-title {
+    margin-bottom: 3rem;
+  }
+
+  .prev-button,
+  .next-button {
+    width: 20%;
+    margin: auto;
+  }
+}
+
+/* For large screens */
+@media (min-width: 769px) {
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
   }
 }

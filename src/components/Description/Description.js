@@ -4,42 +4,32 @@ import "./Description.css";
 
 const Description = () => {
   return (
-    <div class="grid grid-cols-2 gap-4 mb-[35rem] mt-[15rem] w-[90%] ml-auto mr-auto bg-[#343a40]">
-      <div class="bg-[#343a40] ml-20 align-middle mt-auto mb-auto">
-        <h1 class="text-4xl font-bold mb-6 bg-dark-grey text-white bg-[#343a40] ">
-          Valorile mele
-        </h1>
-        <p class="text-white text-lg leading-10 bg-[#343a40]">
-          Compasiune
-          <hr />
-        </p>
-        <p class="text-white text-lg leading-10 bg-[#343a40]">
-          Empatie
-          <hr />
-        </p>
-        <p class="text-white text-lg leading-10 bg-[#343a40]">
-          Responsabilitate
-          <hr />
-        </p>
-        <p class="text-white text-lg leading-10 bg-[#343a40]">
-          Respect
-          <hr />
-        </p>
-        <p class="text-white text-lg leading-10 bg-[#343a40]">
-          Sinceritate
-          <hr />
-        </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 md:mb-[35rem] mt-10 md:mt-[15rem] sm:mt-10 w-[90%] mx-auto bg-[#343a40]">
+      <div class="p-8 md:p-16 bg-[#343a40] text-white">
+        <h1 class="text-4xl font-bold mb-6 bg-[#343a40]">Valorile mele</h1>
+        <ul class="text-lg leading-10 bg-[#343a40]">
+          <li class="mb-4 bg-[#343a40] shadow-md rounded-lg px-4">
+            Compasiune
+          </li>
+          <li class="mb-4 bg-[#343a40] shadow-md rounded-lg px-4">Empatie</li>
+          <li class="mb-4 bg-[#343a40] shadow-md rounded-lg px-4">
+            Responsabilitate
+          </li>
+          <li class="mb-4 bg-[#343a40] shadow-md rounded-lg px-4">Respect</li>
+          <li class="mb-4 bg-[#343a40] shadow-md rounded-lg px-4">
+            Sinceritate
+          </li>
+        </ul>
       </div>
 
-      <div class="description-right-container bg-[#343a40]">
+      <div class="description-right-container">
         <img
           src={balance}
           alt="description img"
-          class="w-1/2 md:w-full p-10 bg-[#343a40]"
+          class="w-full md:p-10 bg-[#343a40]"
         />
       </div>
     </div>
   );
 };
-
 export default Description;

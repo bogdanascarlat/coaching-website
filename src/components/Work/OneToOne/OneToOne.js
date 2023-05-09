@@ -3,7 +3,7 @@ import "./OneToOne.css";
 import oneToOne from "../../../assets/one-to-one.jpg";
 
 const OneToOne = () => (
-  <div class="grid grid-cols-2 w-[90%] ml-auto mr-auto mb-60 bg-[#343a40]">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-[90%] ml-auto mr-auto mb-30 bg-[#343a40]">
     <div class="flex-1 bg-dark-grey bg-[#343a40]">
       <img src={oneToOne} alt="one to one" class="p-16 bg-[#343a40] h-full" />
     </div>
@@ -34,5 +34,4 @@ const OneToOne = () => (
     </div>
   </div>
 );
-
 export default OneToOne;

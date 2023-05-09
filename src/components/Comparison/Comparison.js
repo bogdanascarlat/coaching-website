@@ -9,7 +9,11 @@ const Comparison = () => {
     <div class="w-full h-96 relative mx-auto mb-80 pt-8">
       <div class="flex absolute left-10 -top-[75%] bg-transparent">
         <div class="w-full lg:w-1/2 flex justify-center items-center mr-20 bg-transparent">
-          <img src={before} alt="before" class="h-auto max-w-full z-10" />
+          <img
+            src={before}
+            alt="before"
+            class="h-auto max-w-full z-10 rounded-lg"
+          />
         </div>
         <div class="w-full lg:w-1/2 mr-20 mt-10">
           <h2 class="text-2xl font-bold mb-4">
@@ -70,7 +74,7 @@ const Comparison = () => {
             </p>
           </div>
           <div class="w-full lg:w-1/2 flex justify-center items-center ml-20 bg-transparent">
-            <img src={after} alt="after" class="h-auto max-w-full" />
+            <img src={after} alt="after" class="h-auto max-w-full rounded-lg" />
           </div>
         </div>
       </div>

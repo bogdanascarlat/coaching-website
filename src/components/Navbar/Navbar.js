@@ -10,6 +10,7 @@ import {
 import "./Navbar.css";
 import "../../styles/tailwind.css";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -21,44 +22,44 @@ const Navbar = () => {
       <div class="hidden md:flex md:items-center md:justify-between">
         <ul class="navbar-links flex justify-center items-center text-xl list-none">
           <li class="mx-4 cursor-pointer">
-            <a
-              href="#home"
+            <Link
+              to="/"
               class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
             >
               Acasa
-            </a>
+            </Link>
           </li>
           <li class="mx-4 cursor-pointer">
-            <a
-              href="#about"
+            <Link
+              to="/about"
               class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
             >
               Despre
-            </a>
+            </Link>
           </li>
           <li class="mx-4 cursor-pointer">
-            <a
-              href="#solutions"
+            <Link
+              to="/solutions"
               class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
             >
               Solutii
-            </a>
+            </Link>
           </li>
           <li class="mx-4 cursor-pointer">
-            <a
-              href="#events"
+            <Link
+              a="/events"
               class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
             >
               Evenimente si Workshopuri
-            </a>
+            </Link>
           </li>
           <li class="mx-4 cursor-pointer">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -98,13 +99,12 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <LanguageDropdown class="language hidden md:flex md:items-center md:justify-between sm:flex sm:items-center sm:justify-between" />
       <div>
         <GiHamburgerMenu
           color="var(--color-black)"
           fontSize={27}
           onClick={() => setToggleMenu(true)}
-          class="flex md:hidden"
+          class="flex md:hidden mr-5 cursor-pointer"
         />
         {toggleMenu && (
           <div class="fixed top-0 left-0 w-full h-screen transition duration-500 ease-in-out flex flex-col z-50">
@@ -176,10 +176,13 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <LanguageDropdown class="flex justify-center" />
+            <div class="absolute top-0 left-0">
+              <LanguageDropdown class="md:hidden" />
+            </div>
           </div>
         )}
       </div>
+      <LanguageDropdown class="language hidden md:flex md:items-center md:justify-between sm:hidden ml-5" />
     </nav>
   );
 };

@@ -6,7 +6,11 @@ import "../../styles/tailwind.css";
 const Invite = () => (
   <div class="grid grid-cols-2 gap-4 w-[90%] ml-auto mr-auto mb-60 bg-[#343a40]">
     <div class="flex-1 bg-dark-grey bg-[#343a40]">
-      <img src={invite} alt="one to one" class="p-16 bg-[#343a40] h-full" />
+      <img
+        src={invite}
+        alt="one to one"
+        class="p-16 bg-[#343a40] h-full rounded-[10%] shadow-md"
+      />
     </div>
 
     <div class="flex-1 bg-[#343a40] flex flex-col justify-center items-start ml-auto mr-auto">

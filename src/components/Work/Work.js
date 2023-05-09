@@ -36,7 +36,7 @@ function Work() {
       : "font-bold tracking-wide bg-[#ffe8cc] text-[#343a40] text-sm rounded-full py-2 px-4 focus:outline-none";
 
   return (
-    <div class="py-20 mt-96">
+    <div className="work-section py-20 mt-96 mb-[10rem]">
       <div class="mb-3">
         <h1 class="text-3xl font-bold mb-3 text-center">
           Cum vom lucra impreuna?
