@@ -7,7 +7,6 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
-import "./Navbar.css";
 import "../../styles/tailwind.css";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 import { Link } from "react-router-dom";

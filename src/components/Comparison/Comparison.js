@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { Tooltip } from "react-tooltip";
-import "./Comparison.css";
+import React from "react";
 import before from "../../assets/before.jpg";
 import after from "../../assets/after.jpg";
 

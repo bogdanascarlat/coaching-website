@@ -1,6 +1,5 @@
 import React from "react";
 import invite from "../../assets/invite.jpg";
-import "./Invite.css";
 import "../../styles/tailwind.css";
 
 const Invite = () => (

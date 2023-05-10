@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import inspiringPhoto from "../../assets/intro-photo.jpg";
-import "./Header.css";
 
 const Header = () => {
   const [showNewText, setShowNewText] = useState(false);

@@ -1,6 +1,5 @@
 import React from "react";
 import balance from "../../assets/balance.jpg";
-import "./Description.css";
 
 const Description = () => {
   return (

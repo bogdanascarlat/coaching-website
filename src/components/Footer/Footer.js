@@ -5,7 +5,6 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
-import "./Footer.css";
 
 const Footer = () => (
   <div class="border-t-2 border-[#495057] bg-[#fff5f5]">

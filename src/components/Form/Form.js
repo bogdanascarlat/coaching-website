@@ -1,5 +1,4 @@
 import React from "react";
-import "./Form.css";
 
 const Form = () => (
   <div class="mx-auto pb-20 px-5 md:px-10 lg:px-0 max-w-screen-lg">
