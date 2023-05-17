@@ -13,7 +13,7 @@ const Header = () => {
       <img
         src={inspiringPhoto}
         alt="tree"
-        class="w-full md:w-[35rem] mr-[5rem] rounded-lg"
+        class="w-full md:w-[35rem] mr-[5rem]"
       />
       <div class="justify-center items-center my-auto">
         <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3">

@@ -8,7 +8,7 @@ const Invite = () => (
       <img
         src={invite}
         alt="one to one"
-        class="p-16 bg-[#343a40] h-full rounded-[10%] shadow-md"
+        class="p-16 bg-[#343a40] h-full shadow-md"
       />
     </div>
 

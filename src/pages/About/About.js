@@ -20,7 +20,7 @@ const About = () => {
         <img
           src={invite}
           alt="presentation-photo"
-          class="w-full md:w-[35rem] mr-[5rem] rounded-lg"
+          class="w-full md:w-[35rem] mr-[5rem]"
         />
         <div class="justify-center items-center my-auto">
           <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3 text-center">
@@ -58,7 +58,7 @@ const About = () => {
                   despre asta.
                 </p>
                 <h2 class="font-bold text-white text-2xl bg-transparent">
-                  𝗗𝗲 𝗰𝗲? - 𝗗𝗲 𝗳𝗿𝗶𝗰𝗮.
+                  De ce? &#8211; De frica.
                 </h2>
                 <p class="text-white text-xl bg-transparent">
                   De frica de a fi aratat cu degetul, de a fi oaia neagra a
@@ -86,7 +86,7 @@ const About = () => {
             curiozitate si de dorinta de evolutie si cu mari asteptari.
           </p>
         </div>
-        <img src={started} alt="student-photo" class="w-full rounded-lg" />
+        <img src={started} alt="student-photo" class="w-full" />
       </div>
       <div class="w-[90%] h-full mx-auto mt-[5rem] mb-32">
         <div class="bg-[#ffe8cc] h-full p-10">

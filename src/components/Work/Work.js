@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Work.css";
 import OneToOne from "./OneToOne/OneToOne";
 import Group from "./Group/Group";
 import Coaching from "./Coaching/Coaching";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import {
@@ -9,56 +9,81 @@ import {
 } from "react-icons/fa";
 import "../../styles/tailwind.css";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      const scrollPosition = window.pageYOffset;
+
+      if (scrollPosition > 20 * 30) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav class="w-full flex justify-between items-center px-4 py-2 border-b-2 border-[#495057]">
+    <nav class="navbar sticky top-0 w-full flex justify-between items-center px-4 py-2 border-b-2 border-[#495057]">
       <div class="logo ml-10">
         <p>Roxana Dumitrescu</p>
       </div>
-      <div class="hidden md:flex md:items-center md:justify-between">
-        <ul class="navbar-links flex justify-center items-center text-xl list-none">
-          <li class="mx-4 cursor-pointer">
-            <Link
+      <div className="hidden md:flex md:items-center md:justify-between">
+        <ul className="navbar-links flex justify-center items-center text-xl list-none">
+          <li className="mx-4 cursor-pointer">
+            <NavLink
               to="/"
-              class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
               Acasa
-            </Link>
+            </NavLink>
           </li>
-          <li class="mx-4 cursor-pointer">
-            <Link
+          <li className="mx-4 cursor-pointer">
+            <NavLink
               to="/about"
-              class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
               Despre
-            </Link>
+            </NavLink>
           </li>
-          <li class="mx-4 cursor-pointer">
-            <Link
+          <li className="mx-4 cursor-pointer">
+            <NavLink
               to="/solutions"
-              class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
               Solutii
-            </Link>
+            </NavLink>
           </li>
-          <li class="mx-4 cursor-pointer">
-            <Link
-              a="/events"
-              class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+          <li className="mx-4 cursor-pointer">
+            <NavLink
+              to="/events"
+              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
               Evenimente si Workshopuri
-            </Link>
+            </NavLink>
           </li>
-          <li class="mx-4 cursor-pointer">
-            <Link
+          <li className="mx-4 cursor-pointer">
+            <NavLink
               to="/contact"
-              class="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
+              activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

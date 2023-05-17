@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import OneToOne from "./OneToOne/OneToOne";
-import Group from "./Group/Group";
-import Coaching from "./Coaching/Coaching";
+import OneToOne from "../../components/Work/OneToOne/OneToOne";
+import Group from "../../components/Work/Group/Group";
+import Coaching from "../../components/Work/Coaching/Coaching";
 
 const Solutions = () => {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -38,10 +38,10 @@ const Solutions = () => {
   return (
     <div>
       <Navbar />
-      <div className="work-section md:mb-[5rem] xs:mb-15 mt-[5rem]">
+      <div className="work-section py-20 mt-96 mb-[10rem]">
         <div class="mb-3">
           <h1 class="text-3xl font-bold mb-3 text-center">
-            Vom identifica cele mai bune solutii personalizate pentru tine
+            Cum vom lucra impreuna?
           </h1>
           <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5">
             Te voi ajuta sa identifici cea mai buna optiune in functie de
