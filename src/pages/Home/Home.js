@@ -9,6 +9,8 @@ import QuestionsSlider from "../../components/QuestionsSlider/QuestionsSlider";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 
+import { useTranslation } from "react-i18next";
+
 const Home = () => {
   return (
     <div>

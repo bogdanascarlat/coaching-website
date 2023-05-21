@@ -11,6 +11,8 @@ import "../../styles/tailwind.css";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 import { NavLink } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -33,6 +35,8 @@ const Navbar = () => {
     };
   }, []);
 
+  const { t } = useTranslation(["home"]);
+
   return (
     <nav class="navbar sticky top-0 w-full flex justify-between items-center px-4 py-2 border-b-2 border-[#495057]">
       <div class="logo ml-10">
@@ -46,7 +50,7 @@ const Navbar = () => {
               className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
               activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
-              Acasa
+              {t("home:home")}
             </NavLink>
           </li>
           <li className="mx-4 cursor-pointer">
@@ -55,7 +59,7 @@ const Navbar = () => {
               className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
               activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
-              Despre
+              {t("home:about")}
             </NavLink>
           </li>
           <li className="mx-4 cursor-pointer">
@@ -64,7 +68,7 @@ const Navbar = () => {
               className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
               activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
-              Solutii
+              {t("home:products")}
             </NavLink>
           </li>
           <li className="mx-4 cursor-pointer">
@@ -73,7 +77,7 @@ const Navbar = () => {
               className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
               activeclassname="text-white bg-[#343a40] border rounded-lg"
             >
-              Evenimente si Workshopuri
+              {t("home:events")}
             </NavLink>
           </li>
           <li className="mx-4 cursor-pointer">

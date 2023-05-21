@@ -2,7 +2,10 @@ import React from "react";
 import before from "../../assets/before.jpg";
 import after from "../../assets/after.jpg";
 
+import { useTranslation } from "react-i18next";
+
 const Comparison = () => {
+  const { t } = useTranslation(["home"]);
   return (
     <div class="w-full h-96 relative mx-auto mb-80 pt-8 md:mb-[80] sm:mb-[80]">
       <div class="flex absolute left-10 -top-[75%] bg-transparent md:col-12">
@@ -11,24 +14,11 @@ const Comparison = () => {
         </div>
         <div class="w-full lg:w-1/2 mr-20 mt-10">
           <h2 class="text-2xl font-bold mb-4">
-            Inainte de a apela la un coach:
+            {t("home:beforecallingacoach")}
           </h2>
           <div class="max-w-2xl mx-auto text-left h-40 overflow-y-scroll">
-            <p class="text-lg font-semibold mb-4">
-              Ma luptam cu sentimente coplesitoare de stres, anxietate si
-              epuizare. In calitate de profesionist, m-am trezit adesea ca imi
-              sacrificam viata personala si relatiile pentru a raspunde
-              cerintelor profesionale.
-            </p>
-            <p class="text-lg font-semibold">
-              Am fost constant suprasolicitata si mi-am neglijat propriile nevoi
-              fizice si emotionale, ceea ce a dus la epuizare si intr-un final
-              la boala. Imi era din ce in ce mai greu sa ma concentrez, dar tot
-              imi ignoram sanatatea si puneam munca pe primul loc. Imi era frica
-              sa ma aleg pe mine. Stiam ca trebuie sa schimb ceva, dar nu stiam
-              exact ce sa fac si de unde sa incep, macinata fiind de teama ca as
-              putea sa imi pierd locul de munca.
-            </p>
+            <p class="text-lg font-semibold mb-4">{t("home:comparisonp1")}</p>
+            <p class="text-lg font-semibold">{t("home:comparisonp2")}</p>
           </div>
         </div>
       </div>
@@ -48,24 +38,10 @@ const Comparison = () => {
         <div class="flex items-center bg-transparent">
           <div class="max-w-2xl mx-auto text-left h-40 overflow-y-scroll">
             <h2 class="text-2xl font-bold mb-4">
-              Dupa ce am lucrat cu un coach:
+              {t("home:afterworkingwithacoach")}
             </h2>
-            <p class="text-lg font-semibold mb-4">
-              Am reusit sa gasesc echilibrul intre munca si viata personala. Am
-              reusit sa stabilesc limite clare si sanatoase la locul de munca.
-              Am invatat sa imi spun mie “DA”. Acum acord prioritate ingrijirii
-              mele personale si ma asigur ca fac pauza cand am nevoie, imi
-              folosesc timpul liber pentru a ma recrea, ma plimb, citesc si am
-              timp pentru familia mea.
-            </p>
-            <p class="text-lg font-semibold">
-              Am reusit sa identific radacina stresului, ceea ce a condus si la
-              o comunicare mai buna cu cei din jur si la un mediu de lucru mai
-              sanatos. Acum pot fi pe deplin prezenta atat in viata personala
-              cat si cea profesionala, iar productivitatea mea a crescut
-              semnificativ. Am o viata echilibrata si implinita si asta ma face
-              fericita.
-            </p>
+            <p class="text-lg font-semibold mb-4">{t("home:comparisonp3")}</p>
+            <p class="text-lg font-semibold">{t("home:comparisonp4")}</p>
           </div>
           <div class="w-full lg:w-1/2 flex justify-center items-center ml-20 bg-transparent">
             <img src={after} alt="after" class="h-auto max-w-full rounded-lg" />

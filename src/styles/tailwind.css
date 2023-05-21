@@ -95,3 +95,16 @@
   right: 0;
   z-index: 999;
 }
+
+.polygon {
+  fill: none;
+  stroke: #a0aec0;
+  stroke-width: 3;
+}
+
+.hovered-polygon {
+  stroke: #495057;
+  stroke-width: 4;
+  box-shadow: #495057;
+  cursor: pointer;
+}

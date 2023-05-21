@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const LanguageDropdown = () => {
-  const [language, setLanguage] = React.useState("ro"); // default language is English
+  const [language, setLanguage] = React.useState("ro"); // default language is Ro
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false); // initial state of language options dropdown is closed
+
+  const { t, i18n } = useTranslation();
+
+  React.useEffect(() => {
+    setLanguage(i18n.language);
+  }, [i18n.language]);
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen((prevState) => !prevState); // toggle the state of language options dropdown on button click
   };
 
-  const handleLanguageSelect = (event) => {
-    setLanguage(event.target.value);
-    setIsDropdownOpen(false); // close the language options dropdown when a language is selected
+  const handleLanguageSelect = (e) => {
+    const newLanguage = e.target.value;
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
+    setIsDropdownOpen(false); // this line will close the dropdown
   };
 
   return (
     <div className="relative">
       <button
         className={`flex items-center text-xl mr-4 ${
-          language === "en" && "hover:bg-[#f0f0f0]"
+          i18n.language === "en" && "hover:bg-[#f0f0f0]"
         }`}
         type="button"
+        value={localStorage.getItem("i18nextLng")}
         onClick={handleDropdownToggle}
       >
+        {/* {t("buttonText")} */}
         {language === "en" ? "English" : "Română"}
         <svg
           className="ml-2 h-5 w-5 fill-current"
