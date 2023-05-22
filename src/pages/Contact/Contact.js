@@ -9,31 +9,31 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation(["contact"]);
+
   return (
     <div>
       <Navbar />
-      {/* <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5">
-        Trimite-mi acum un mesaj.
-      </p> */}
       <div className="mt-[3rem]">
         <Form />
       </div>
       <div class="mb-[3rem]">
         <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5 mb-5">
-          Te invit la o sesiune <b>gratuita</b> pentru a ne cunoaste si a
-          descoperi cum te pot ajuta sa devii o versiune mai buna a ta.
+          {t("contact:iinviteyou")}
         </p>
         <a
           href="https://bit.ly/3owcQLe"
           class="bg-[#343a40] text-[#f0f0f0] font-bold tracking-widest leading-tight text-lg py-2 px-6 ml-auto mr-auto rounded-md cursor-pointer h-[25%] text-center hover:bg-[#868e96] hover:text-white flex justify-center items-center xs:w-[30%] md:w-[20%]"
         >
-          Programeaza o sedinta
+          {t("contact:scheduleameeting")}
         </a>
       </div>
       <div class="mb-[5rem] ">
         <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5 mb-5">
-          Ma poti urmari folosind link-urile de mai jos.
+          {t("contact:youcanfollowmeusingthelinksbelow.")}
         </p>
         <div class="flex justify-center">
           <ul class="flex gap-4 list-none">

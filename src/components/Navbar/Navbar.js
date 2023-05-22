@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav class="navbar sticky top-0 w-full flex justify-between items-center px-4 py-2 border-b-2 border-[#495057]">
       <div class="logo ml-10">
-        <p>Roxana Dumitrescu</p>
+        <a href="/">Roxana Dumitrescu</a>
       </div>
       <div className="hidden md:flex md:items-center md:justify-between">
         <ul className="navbar-links flex justify-center items-center text-xl list-none">

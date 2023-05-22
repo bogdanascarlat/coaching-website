@@ -5,6 +5,8 @@ import OneToOne from "./OneToOne/OneToOne";
 import Group from "./Group/Group";
 import Coaching from "./Coaching/Coaching";
 
+import { useTranslation } from "react-i18next";
+
 const Solutions = () => {
   const [activeComponent, setActiveComponent] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
@@ -35,17 +37,21 @@ const Solutions = () => {
     button === activeButton && activeButton !== null
       ? "font-bold tracking-wide text-[#ffffff] bg-[#343a40] text-sm rounded-full py-2 px-4 focus:outline-none"
       : "font-bold tracking-wide bg-[#ffe8cc] text-[#343a40] text-sm rounded-full py-2 px-4 focus:outline-none";
+
+  const { t } = useTranslation(["solutions"]);
+
   return (
     <div>
       <Navbar />
-      <div className="work-section md:mb-[5rem] xs:mb-15 mt-[5rem]">
+      <div className="work-section md:mb-[10rem] xs:mb-15 mt-[10rem]">
         <div class="mb-3">
           <h1 class="text-3xl font-bold mb-3 text-center">
-            Vom identifica cele mai bune solutii personalizate pentru tine
+            {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}
           </h1>
           <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5">
-            Te voi ajuta sa identifici cea mai buna optiune in functie de
-            nevoile tale. Mai jos poti regasi detalii pentru fiecare in parte.
+            {t(
+              "solutions:Iwillhelpyouidentifythebestoptionaccordingtoyourneedsbelowyoucanfinddetailsforeachone."
+            )}
           </p>
         </div>
         <div class="flex flex-col justify-center items-center">
@@ -60,7 +66,7 @@ const Solutions = () => {
               onClick={() => handleButtonClick("group")}
               class={buttonClass("group")}
             >
-              Group
+              {t("solutions:group")}
             </button>
             <button
               onClick={() => handleButtonClick("coaching")}
