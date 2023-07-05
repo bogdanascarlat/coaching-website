@@ -3,35 +3,43 @@
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Luxurious+Script&family=Nunito:wght@200;300;400;600;700&family=Oswald:wght@200&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;700;900&display=swap");
 
+:root {
+  --font-base: "Cormorant Upright", serif;
+  --font-alt: "Open Sans", sans-serif;
+
+  --color-black: #0c0c0c;
+  --color-grey: #f0f0f0;
+  --color-white: #ffffff;
+  --color-dark-grey: #343a40;
+  --color-light-grey: #495057;
+}
+
+body {
+  @apply bg-secondary;
+}
+
+nav.header {
+  @apply bg-secondary drop-shadow;
+}
+
+nav.header.sticky {
+  @apply bg-secondary/80 backdrop-blur;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.mobile-nav {
+  @apply fixed left-0 top-0 z-50 flex h-screen w-full flex-col bg-secondary transition duration-500 ease-in-out;
+}
+
 .logo {
-  font-family: "Dancing Script", cursive;
+  @apply cursor-pointer text-[2rem] hover:text-primary/90 2xl:text-[3rem];
   font-family: "Dancing Script", cursive, sans-serif;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 3rem;
 }
 
-.logo:hover {
-  color: #495057;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 794px) {
-  .logo {
-    font-size: 1.5rem;
-    margin-right: 7rem;
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:hidden {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 794px) {
+/* @media screen and (max-width: 794px) {
   .navbar-links,
   .social-links,
   .language {
@@ -44,7 +52,7 @@
   .language {
     display: none;
   }
-}
+} */
 
 /* For medium and small screens */
 @media (max-width: 768px) {
@@ -88,13 +96,13 @@
   }
 }
 
-.navbar.sticky {
+/* .navbar.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-}
+} */
 
 .polygon {
   fill: none;

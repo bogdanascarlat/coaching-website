@@ -10,13 +10,13 @@ const Events = () => {
   return (
     <div>
       <Navbar />
-      <div class="flex flex-col items-center justify-center h-screen">
-        <p class="text-gray-500 text-lg mb-5 xs:col-12 max-w-xs mx-auto text-center">
+      <div className="flex h-screen flex-col items-center justify-center">
+        <p className="xs:col-12 mx-auto mb-5 max-w-xs text-center text-lg text-gray-500">
           {t(
             "events:wewillreturnwiththemostcurrentactivitiesassoonaspossible."
           )}
         </p>
-        <img src={empty_state} alt="no content" class="w-1/3 h-50" />
+        <img src={empty_state} alt="no content" className="h-50 w-1/3" />
       </div>
       <Footer />
     </div>

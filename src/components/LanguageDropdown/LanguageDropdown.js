@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-const LanguageDropdown = () => {
+const LanguageDropdown = (props) => {
   const [language, setLanguage] = React.useState("ro"); // default language is Ro
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false); // initial state of language options dropdown is closed
 
@@ -24,16 +24,15 @@ const LanguageDropdown = () => {
   };
 
   return (
-    <div className="relative">
+    <div className={props.className} style={{ position: "relative" }}>
       <button
-        className={`flex items-center text-xl mr-4 ${
+        className={`flex items-center text-xl ${
           i18n.language === "en" && "hover:bg-[#f0f0f0]"
         }`}
         type="button"
         value={localStorage.getItem("i18nextLng")}
         onClick={handleDropdownToggle}
       >
-        {/* {t("buttonText")} */}
         {language === "en" ? "English" : "Română"}
         <svg
           className="ml-2 h-5 w-5 fill-current"
@@ -44,7 +43,7 @@ const LanguageDropdown = () => {
         </svg>
       </button>
       {isDropdownOpen && (
-        <div className="absolute right-0 mt-2 w-24 rounded-md shadow-lg bg-white">
+        <div className="absolute right-0 mt-2 w-24 rounded-md bg-white shadow-lg">
           <div
             className="py-1"
             role="menu"
@@ -52,7 +51,7 @@ const LanguageDropdown = () => {
             aria-labelledby="options-menu"
           >
             <button
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#343a40] w-full text-left"
+              className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#343a40]"
               role="menuitem"
               value="en"
               onClick={handleLanguageSelect}
@@ -60,7 +59,7 @@ const LanguageDropdown = () => {
               English
             </button>
             <button
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#343a40] w-full text-left"
+              className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#343a40]"
               role="menuitem"
               value="ro"
               onClick={handleLanguageSelect}

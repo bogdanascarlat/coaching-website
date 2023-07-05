@@ -18,27 +18,27 @@ const Contact = () => {
     <div>
       <Navbar />
       <div className="mt-[5rem]">{/* <Form /> */}</div>
-      <div class="mb-[3rem]">
-        <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5 mb-5">
+      <div className="mb-[3rem]">
+        <p className="mx-auto mb-5 mt-5 w-1/2 items-center text-center text-2xl font-semibold">
           {t("contact:iinviteyou")}
         </p>
         <a
           href="https://bit.ly/3owcQLe"
-          class="bg-[#343a40] text-[#f0f0f0] font-bold tracking-widest leading-tight text-lg py-2 px-6 ml-auto mr-auto rounded-md cursor-pointer h-[25%] text-center hover:bg-[#868e96] hover:text-white flex justify-center items-center w-72"
+          className="ml-auto mr-auto flex h-[25%] w-72 cursor-pointer items-center justify-center rounded-md bg-[#343a40] px-6 py-2 text-center text-lg font-bold leading-tight tracking-widest text-[#f0f0f0] hover:bg-[#868e96] hover:text-white"
         >
           {t("contact:scheduleameeting")}
         </a>
       </div>
-      <div class="mb-[5rem] mt-[6rem]">
-        <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5 mb-5">
+      <div className="mb-[5rem] mt-[6rem]">
+        <p className="mx-auto mb-5 mt-5 w-1/2 items-center text-center text-2xl font-semibold">
           {t("contact:youcanfollowmeusingthelinksbelow.")}
         </p>
-        <div class="flex justify-center">
-          <ul class="flex gap-4 list-none">
+        <div className="flex justify-center">
+          <ul className="flex list-none gap-4">
             <li>
               <a
                 href="#"
-                class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaLinkedin />
               </a>
@@ -46,7 +46,7 @@ const Contact = () => {
             <li>
               <a
                 href="#"
-                class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaFacebookSquare />
               </a>
@@ -54,7 +54,7 @@ const Contact = () => {
             <li>
               <a
                 href="#"
-                class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaInstagramSquare />
               </a>
@@ -62,7 +62,7 @@ const Contact = () => {
             <li>
               <a
                 href="#"
-                class="block py-2 text-3xl text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-3xl text-[#343a40] hover:text-[#495057]"
               >
                 <FaTwitterSquare />
               </a>

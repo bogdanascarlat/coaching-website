@@ -6,21 +6,22 @@ import Comparison from "../../components/Comparison/Comparison";
 import Work from "../../components/Work/Work";
 import Invite from "../../components/Invite/Invite";
 import QuestionsSlider from "../../components/QuestionsSlider/QuestionsSlider";
-import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <Header />
-      <Description />
-      <Comparison />
-      <Work />
-      <Invite />
-      <QuestionsSlider />
+      <main className="container mb-[6rem]">
+        <Header />
+        <Description />
+        <Comparison />
+        <Work />
+        <Invite />
+        <QuestionsSlider />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

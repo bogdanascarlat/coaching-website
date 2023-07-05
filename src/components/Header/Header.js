@@ -13,35 +13,35 @@ const Header = () => {
   const { t } = useTranslation(["home"]);
 
   return (
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] ml-auto mr-auto mt-[5rem]">
+    <div className="mt-[6rem] grid grid-cols-1 gap-4 md:grid-cols-2">
       <img
         src={inspiringPhoto}
         alt="tree"
-        class="w-full md:w-[35rem] mr-[5rem]"
+        className="mr-[5rem] w-full md:w-[35rem]"
       />
-      <div class="justify-center items-center my-auto">
-        <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3 sm:text-center xs:mb-[3rem]">
+      <div className="my-auto items-center justify-center">
+        <h1 className="xs:mb-[3rem] text-4xl font-bold leading-9 sm:mb-3 sm:mt-3 sm:text-center sm:text-4xl md:mb-16">
           {t("home:inallaspectsofourlivesbalanceiskey")}
         </h1>
-        <p class="text-lg mb-5 leading-relaxed sm:text-base md:pt-[8rem] sm:text-center">
+        <p className="mb-5 text-lg leading-relaxed sm:text-center sm:text-base md:pt-[8rem]">
           {t(
             "home:iguideyoutoidentifythesourcesofstressandtodeveloptogethereffectivestrategiesinmanagingittofindbalanceinallaspectsofyourlife."
           )}
         </p>
-        <div class="flex justify-center sm:justify-center">
+        <div className="flex justify-center sm:justify-center">
           <button
             type="button"
-            class="bg-[#343a40] text-white font-bold tracking-wider text-sm rounded-md py-2 px-4 hover:bg-[#495057] sm:text-base"
+            className="rounded-md bg-[#343a40] px-4 py-2 text-sm font-bold tracking-wider text-white hover:bg-[#495057] sm:text-base"
             onClick={toggleNewText}
           >
             {showNewText ? t("home:hide") : t("home:findmore")}
           </button>
         </div>
         {showNewText && (
-          <div class="font-bold mt-10">
-            <p class="mb-5">{t("home:p1")}</p>
-            <p class="mb-5">{t("home:p2")}</p>
-            <p class="mb-5">{t("home:p3")}</p>
+          <div className="mt-10 font-bold">
+            <p className="mb-5">{t("home:p1")}</p>
+            <p className="mb-5">{t("home:p2")}</p>
+            <p className="mb-5">{t("home:p3")}</p>
           </div>
         )}
       </div>

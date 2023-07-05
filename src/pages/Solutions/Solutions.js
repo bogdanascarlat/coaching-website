@@ -43,19 +43,19 @@ const Solutions = () => {
   return (
     <div>
       <Navbar />
-      <div class="h-96 md:mt-[15rem] sm:mt-[5rem] xs:mt-[5rem] mb-[2rem]">
-        <div class="mb-3">
-          <h1 class="text-3xl font-bold mb-3 text-center">
+      <div className="xs:mt-[5rem] mb-[2rem] h-96 sm:mt-[5rem] md:mt-[15rem]">
+        <div className="mb-3">
+          <h1 className="mb-3 text-center text-3xl font-bold">
             {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}
           </h1>
-          <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5">
+          <p className="mx-auto mt-5 w-1/2 items-center text-center text-2xl font-semibold">
             {t(
               "solutions:Iwillhelpyouidentifythebestoptionaccordingtoyourneedsbelowyoucanfinddetailsforeachone."
             )}
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
-          <div class="bg-[#ffe8cc] rounded-2xl mb-6">
+        <div className="flex flex-col items-center justify-center">
+          <div className="mb-6 rounded-2xl bg-[#ffe8cc]">
             <button
               onClick={() => handleButtonClick("oneToOne")}
               class={buttonClass("oneToOne")}

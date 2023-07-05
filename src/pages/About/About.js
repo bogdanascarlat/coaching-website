@@ -20,112 +20,120 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] ml-auto mr-auto mt-[5rem] mb-32">
+      <div className="mb-32 ml-auto mr-auto mt-[5rem] grid w-[90%] grid-cols-1 gap-4 md:grid-cols-2">
         <img
           src={invite}
           alt="presentation-photo"
-          class="w-full md:w-[35rem] mr-[5rem]"
+          className="mr-[5rem] w-full md:w-[35rem]"
         />
-        <div class="justify-center items-center my-auto">
-          <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3 text-center">
+        <div className="my-auto items-center justify-center">
+          <h1 className="text-center text-4xl font-bold leading-9 sm:mb-3 sm:mt-3 sm:text-4xl md:mb-16">
             {t("about:hello")}
           </h1>
-          <p class="text-2xl mb-5 leading-relaxed  text-center">
+          <p className="mb-5 text-center text-2xl  leading-relaxed">
             {t("about:intro")}
           </p>
         </div>
       </div>
-      <div class="flex items-center justify-center mb-32">
-        <div class="relative w-[90%]">
-          <img src={writing} alt="writing" class="w-full" />
-          <div class="absolute top-0 left-0 text-xl w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-            <div class="text-white text-xl bg-transparent w-[80%] flex flex-col items-center justify-center">
-              <div class="text-white text-xl bg-transparent w-[80%] mb-20">
-                <p class="text-white text-xl bg-transparent mb-5">
+      <div className="mb-32 flex items-center justify-center">
+        <div className="relative w-[90%]">
+          <img src={writing} alt="writing" className="w-full" />
+          <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 text-xl">
+            <div className="flex w-[80%] flex-col items-center justify-center bg-transparent text-xl text-white">
+              <div className="mb-20 w-[80%] bg-transparent text-xl text-white">
+                <p className="mb-5 bg-transparent text-xl text-white">
                   {t("about:p1")}
                 </p>
-                <p class="text-white text-xl bg-transparent">{t("about:p2")}</p>
+                <p className="bg-transparent text-xl text-white">
+                  {t("about:p2")}
+                </p>
               </div>
-              <div class="text-white text-xl bg-transparent w-[80%] mb-5">
-                <p class="text-white text-xl bg-transparent mb-5">
+              <div className="mb-5 w-[80%] bg-transparent text-xl text-white">
+                <p className="mb-5 bg-transparent text-xl text-white">
                   {t("about:p3")}
                 </p>
-                <h2 class="font-bold text-white text-2xl bg-transparent">
+                <h2 className="bg-transparent text-2xl font-bold text-white">
                   {t("about:p4")}
                 </h2>
-                <p class="text-white text-xl bg-transparent">{t("about:p5")}</p>
+                <p className="bg-transparent text-xl text-white">
+                  {t("about:p5")}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-[90%] mx-auto mt-[5rem] mb-32">
-        <div class="my-auto mx-auto">
-          <h2 class="text-3xl font-bold md:mb-14 leading-9 sm:mt-3 sm:mb-3">
+      <div className="mx-auto mb-32 mt-[5rem] grid w-[90%] grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="mx-auto my-auto">
+          <h2 className="text-3xl font-bold leading-9 sm:mb-3 sm:mt-3 md:mb-14">
             {t("about:started")}
           </h2>
-          <p class="text-xl mb-5 leading-relaxed">{t("about:startedtext")}</p>
+          <p className="mb-5 text-xl leading-relaxed">
+            {t("about:startedtext")}
+          </p>
         </div>
-        <img src={started} alt="student-photo" class="w-full" />
+        <img src={started} alt="student-photo" className="w-full" />
       </div>
-      <div class="w-[90%] h-full mx-auto mt-[5rem] mb-32">
-        <div class="bg-[#ffe8cc] h-full p-10">
-          <div class="bg-[#ffe8cc] mb-5">
-            <h2 class="bg-[#ffe8cc] font-bold">{t("about:reality")}</h2>
-            <p class="bg-[#ffe8cc]">{t("about:management")}</p>
+      <div className="mx-auto mb-32 mt-[5rem] h-full w-[90%]">
+        <div className="h-full bg-[#ffe8cc] p-10">
+          <div className="mb-5 bg-[#ffe8cc]">
+            <h2 className="bg-[#ffe8cc] font-bold">{t("about:reality")}</h2>
+            <p className="bg-[#ffe8cc]">{t("about:management")}</p>
           </div>
-          <div class="bg-[#ffe8cc] mb-5">
-            <h2 class="bg-[#ffe8cc] font-bold">{t("about:corporations")}</h2>
-            <p class="bg-[#ffe8cc]">{t("about:burnouttext")}</p>
+          <div className="mb-5 bg-[#ffe8cc]">
+            <h2 className="bg-[#ffe8cc] font-bold">
+              {t("about:corporations")}
+            </h2>
+            <p className="bg-[#ffe8cc]">{t("about:burnouttext")}</p>
           </div>
-          <div class="bg-[#ffe8cc] mb-5">
-            <h2 class="bg-[#ffe8cc] font-bold">{t("about:whattheydid")}</h2>
-            <p class="bg-[#ffe8cc]">{t("about:facts")}</p>
-            <p class="bg-[#ffe8cc]" font-bold>
+          <div className="mb-5 bg-[#ffe8cc]">
+            <h2 className="bg-[#ffe8cc] font-bold">{t("about:whattheydid")}</h2>
+            <p className="bg-[#ffe8cc]">{t("about:facts")}</p>
+            <p className="bg-[#ffe8cc]" font-bold>
               {t("about:facts")}
             </p>
           </div>
         </div>
       </div>
-      <div class="w-[90%] mx-auto mb-32 border-t border-b border-[#495057] pt-10 pb-10">
-        <h2 class="text-3xl font-bold md:mb-14 leading-9 sm:mt-3 sm:mb-3">
+      <div className="mx-auto mb-32 w-[90%] border-b border-t border-[#495057] pb-10 pt-10">
+        <h2 className="text-3xl font-bold leading-9 sm:mb-3 sm:mt-3 md:mb-14">
           {t("about:experience")}
         </h2>
-        <div class="h-[10rem] overflow-y-scroll">
-          <p class="mb-5">{t("about:expp1")}</p>
-          <p class="mb-5">{t("about:expp2")}</p>
-          <p class="mb-5">{t("about:expp3")}</p>
-          <p class="mb-5">{t("about:expp4")}</p>
-          <p class="mb-5">{t("about:expp5")}</p>
-          <p class="mb-5">{t("about:expp6")}</p>
-          <p class="mb-5">{t("about:expp7")}</p>
-          <p class="mb-5">{t("about:expp8")}</p>
+        <div className="h-[10rem] overflow-y-scroll">
+          <p className="mb-5">{t("about:expp1")}</p>
+          <p className="mb-5">{t("about:expp2")}</p>
+          <p className="mb-5">{t("about:expp3")}</p>
+          <p className="mb-5">{t("about:expp4")}</p>
+          <p className="mb-5">{t("about:expp5")}</p>
+          <p className="mb-5">{t("about:expp6")}</p>
+          <p className="mb-5">{t("about:expp7")}</p>
+          <p className="mb-5">{t("about:expp8")}</p>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] ml-auto mr-auto mt-[5rem] bg-[#343a40] mb-32">
-        <div class="flex-1 bg-dark-grey bg-[#343a40]">
+      <div className="mb-32 ml-auto mr-auto mt-[5rem] grid w-[90%] grid-cols-1 gap-4 bg-[#343a40] md:grid-cols-2">
+        <div className="bg-dark-grey flex-1 bg-[#343a40]">
           <img
             src={question}
             alt="question-photo"
-            class="p-16 bg-[#343a40] h-100 shadow-md"
+            className="h-100 bg-[#343a40] p-16 shadow-md"
           />
         </div>
-        <div class="flex-1 bg-[#343a40] flex flex-col justify-center items-start ml-auto mr-auto">
-          <h2 className="bg-[#343a40] text-white text-3xl font-bold md:mb-14 leading-9 sm:mt-3 sm:mb-3">
+        <div className="ml-auto mr-auto flex flex-1 flex-col items-start justify-center bg-[#343a40]">
+          <h2 className="bg-[#343a40] text-3xl font-bold leading-9 text-white sm:mb-3 sm:mt-3 md:mb-14">
             {t("about:why")}
           </h2>
-          <div class="bg-[#343a40] mr-12">
-            <p class="bg-[#343a40] text-white">{t("about:limit")}</p>
+          <div className="mr-12 bg-[#343a40]">
+            <p className="bg-[#343a40] text-white">{t("about:limit")}</p>
             <button
               type="button"
-              class="bg-[#f0f0f0] text-[#343a40] font-bold tracking-wider text-sm rounded-md py-2 px-4 hover:bg-[#adb5bd] hover:text-white sm:text-base mt-10"
+              className="mt-10 rounded-md bg-[#f0f0f0] px-4 py-2 text-sm font-bold tracking-wider text-[#343a40] hover:bg-[#adb5bd] hover:text-white sm:text-base"
               onClick={toggleNewText}
             >
               {showNewText ? t("about:hide") : t("about:findmore")}
             </button>
             {showNewText && (
-              <div class="font-bold mt-10">
-                <p class="bg-[#343a40] text-white text-center mb-8 mt-10">
+              <div className="mt-10 font-bold">
+                <p className="mb-8 mt-10 bg-[#343a40] text-center text-white">
                   {t("about:findtext")}
                 </p>
               </div>
@@ -133,80 +141,80 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] mx-auto mt-[5rem] mb-32 bg-[#ffe8cc] p-10">
-        <div class="flex-1 border-r-2 border-[#495057] flex items-center bg-[#ffe8cc]">
-          <h2 class="text-3xl font-bold leading-9 text-center md:text-left bg-[#ffe8cc]">
+      <div className="mx-auto mb-32 mt-[5rem] grid w-[90%] grid-cols-1 gap-4 bg-[#ffe8cc] p-10 md:grid-cols-2">
+        <div className="flex flex-1 items-center border-r-2 border-[#495057] bg-[#ffe8cc]">
+          <h2 className="bg-[#ffe8cc] text-center text-3xl font-bold leading-9 md:text-left">
             {t("about:learned")}
           </h2>
         </div>
-        <div class="flex-1 flex flex-col justify-center items-center md:items-start bg-[#ffe8cc]">
-          <ul class="list-disc pl-6 bg-[#ffe8cc]">
-            <li class="mb-5 bg-[#ffe8cc]">{t("about:learnedp1")}</li>
-            <li class="mb-5 bg-[#ffe8cc]">{t("about:learnedp2")}</li>
-            <li class="bg-[#ffe8cc]">{t("about:learnedp3")}</li>
+        <div className="flex flex-1 flex-col items-center justify-center bg-[#ffe8cc] md:items-start">
+          <ul className="list-disc bg-[#ffe8cc] pl-6">
+            <li className="mb-5 bg-[#ffe8cc]">{t("about:learnedp1")}</li>
+            <li className="mb-5 bg-[#ffe8cc]">{t("about:learnedp2")}</li>
+            <li className="bg-[#ffe8cc]">{t("about:learnedp3")}</li>
           </ul>
         </div>
       </div>
 
-      <div class="flex items-center justify-center mb-32">
-        <div class="relative w-[90%]">
-          <img src={learned} alt="learned" class="w-full" />
-          <div class="absolute top-0 left-0 text-xl w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-            <div class="text-white text-xl bg-transparent w-[80%] flex flex-col items-center justify-center mt-10">
-              <div class="text-white text-xl bg-transparent w-[80%] mb-20">
-                <h2 class="text-white text-xl bg-transparent mb-5">
+      <div className="mb-32 flex items-center justify-center">
+        <div className="relative w-[90%]">
+          <img src={learned} alt="learned" className="w-full" />
+          <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 text-xl">
+            <div className="mt-10 flex w-[80%] flex-col items-center justify-center bg-transparent text-xl text-white">
+              <div className="mb-20 w-[80%] bg-transparent text-xl text-white">
+                <h2 className="mb-5 bg-transparent text-xl text-white">
                   {t("about:endtext")}
                 </h2>
-                <ul class="text-white text-xl bg-transparent list-disc pl-6">
-                  <li class="text-white text-xl bg-transparent mb-5">
+                <ul className="list-disc bg-transparent pl-6 text-xl text-white">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp1")}
                   </li>
-                  <li class="text-white text-xl bg-transparent mb-5">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp2")}
                   </li>
-                  <li class="text-white text-xl bg-transparent mb-5">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp3")}
                   </li>
-                  <li class="text-white text-xl bg-transparent mb-5">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp4")}
                   </li>
                 </ul>
               </div>
-              <div class="text-white text-xl bg-transparent w-[80%] mb-5">
-                <p class="text-white text-xl bg-transparent mb-5">
+              <div className="mb-5 w-[80%] bg-transparent text-xl text-white">
+                <p className="mb-5 bg-transparent text-xl text-white">
                   {t("about:process")}
                 </p>
-                <ul class="list-disc pl-6 text-white text-xl bg-transparent">
-                  <li class="mb-5 text-white text-xl bg-transparent">
+                <ul className="list-disc bg-transparent pl-6 text-xl text-white">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:processp1")}
                   </li>
-                  <li class="mb-5 text-white text-xl bg-transparent">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:processp2")}
                   </li>
-                  <li class="mb-5 text-white text-xl bg-transparent">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:processp3")}
                   </li>
-                  <li class="mb-5 text-white text-xl bg-transparent">
+                  <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:processp4")}
                   </li>
                 </ul>
-                <p class="font-bold underline text-white text-xl bg-transparent">
+                <p className="bg-transparent text-xl font-bold text-white underline">
                   {t("about:processp5")}
                 </p>
               </div>
-              <div class="text-white text-xl bg-transparent w-[80%] mb-5 mt-10">
-                <p class="mb-5 text-white text-xl bg-transparent">
+              <div className="mb-5 mt-10 w-[80%] bg-transparent text-xl text-white">
+                <p className="mb-5 bg-transparent text-xl text-white">
                   {t("about:endtext1")}
                 </p>
-                <p class="mb-5 text-white text-xl bg-transparent">
+                <p className="mb-5 bg-transparent text-xl text-white">
                   {t("about:exndtext2")}
                 </p>
-                <p class="mb-5 text-white text-xl bg-transparent">
+                <p className="mb-5 bg-transparent text-xl text-white">
                   {t("about:exndtext3")}
                 </p>
               </div>
-              <div class="text-center w-[50%] text-white text-2xl bg-transparent mt-20">
-                <p class="font-bold text-white text-xl bg-transparent">
+              <div className="mt-20 w-[50%] bg-transparent text-center text-2xl text-white">
+                <p className="bg-transparent text-xl font-bold text-white">
                   {t("about:endtext4")}
                 </p>
               </div>

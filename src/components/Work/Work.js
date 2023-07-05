@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "../../styles/tailwind.css";
-
 import { useTranslation } from "react-i18next";
 
 function Work() {
@@ -13,16 +11,16 @@ function Work() {
   const { t } = useTranslation(["home"]);
 
   return (
-    <div className="work-section py-20 mb-[10rem] sm:mt-[25rem]">
+    <div className="work-section mt-[6rem] py-20">
       <div className="mb-[3rem]">
-        <h1 className="text-3xl font-bold mb-3 text-center">
+        <h1 className="mb-3 text-center text-3xl font-bold">
           {t("home:howwillweworktogether")}
         </h1>
-        <p className="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5">
+        <p className="mx-auto mt-5 w-1/2 items-center text-center text-2xl font-semibold">
           {t("home:iwillhelpyouidentifythebestoptionaccordingtoyourneeds.")}
         </p>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -107,15 +105,15 @@ function Work() {
             <div
               className={
                 hoveredPolygon === "polygon1"
-                  ? "text-gray-500 p-4 flex items-center justify-center h-full content"
-                  : "text-gray-500 p-4 flex items-center justify-center h-full"
+                  ? "content flex h-full items-center justify-center p-4 text-gray-500"
+                  : "flex h-full items-center justify-center p-4 text-gray-500"
               }
             >
               <div className="text-center">
-                <h2 className="text-lg font-bold mb-2 hover:text-xl cursor-pointer">
+                <h2 className="mb-2 cursor-pointer text-lg font-bold hover:text-xl">
                   {t("home:calibration")}
                 </h2>
-                <p className="text-lg cursor-pointer">
+                <p className="cursor-pointer text-lg">
                   {t("home:calibrationtext")}
                 </p>
               </div>
@@ -126,15 +124,15 @@ function Work() {
             <div
               className={
                 hoveredPolygon === "polygon2"
-                  ? "text-gray-500 p-4 flex items-center justify-center h-full content"
-                  : "text-gray-500 p-4 flex items-center justify-center h-full"
+                  ? "content flex h-full items-center justify-center p-4 text-gray-500"
+                  : "flex h-full items-center justify-center p-4 text-gray-500"
               }
             >
               <div className="text-center">
-                <h2 className="text-lg font-bold mb-2 hover:text-xl cursor-pointer">
+                <h2 className="mb-2 cursor-pointer text-lg font-bold hover:text-xl">
                   {t("home:collaboration")}
                 </h2>
-                <p className="text-lg cursor-pointer">
+                <p className="cursor-pointer text-lg">
                   {t("home:collaborationtext")}
                 </p>
               </div>
@@ -145,15 +143,15 @@ function Work() {
             <div
               className={
                 hoveredPolygon === "polygon3"
-                  ? "text-gray-500 p-4 flex items-center justify-center h-full content"
-                  : "text-gray-500 p-4 flex items-center justify-center h-full"
+                  ? "content flex h-full items-center justify-center p-4 text-gray-500"
+                  : "flex h-full items-center justify-center p-4 text-gray-500"
               }
             >
               <div className="text-center">
-                <h2 className="text-lg font-bold mb-2 hover:text-xl cursor-pointer">
+                <h2 className="mb-2 cursor-pointer text-lg font-bold hover:text-xl">
                   {t("home:theactualthing")}
                 </h2>
-                <p className="text-lg cursor-pointer">
+                <p className="cursor-pointer text-lg">
                   {t("home:theactualthingtext")}
                 </p>
               </div>
@@ -164,15 +162,15 @@ function Work() {
             <div
               className={
                 hoveredPolygon === "polygon4"
-                  ? "text-gray-500 p-4 flex items-center justify-center h-full content"
-                  : "text-gray-500 p-4 flex items-center justify-center h-full"
+                  ? "content flex h-full items-center justify-center p-4 text-gray-500"
+                  : "flex h-full items-center justify-center p-4 text-gray-500"
               }
             >
               <div className="text-center">
-                <h2 className="text-lg font-bold mb-2 hover:text-xl cursor-pointer">
+                <h2 className="mb-2 cursor-pointer text-lg font-bold hover:text-xl">
                   {t("home:analyze")}
                 </h2>
-                <p className="text-lg cursor-pointer">
+                <p className="cursor-pointer text-lg">
                   {t("home:analyzetext")}
                 </p>
               </div>
@@ -183,15 +181,15 @@ function Work() {
             <div
               className={
                 hoveredPolygon === "polygon5"
-                  ? "text-gray-500 p-4 flex items-center justify-center h-full content"
-                  : "text-gray-500 p-4 flex items-center justify-center h-full"
+                  ? "content flex h-full items-center justify-center p-4 text-gray-500"
+                  : "flex h-full items-center justify-center p-4 text-gray-500"
               }
             >
               <div className="text-center">
-                <h2 className="text-lg font-bold mb-2 hover:text-xl cursor-pointer">
+                <h2 className="mb-2 cursor-pointer text-lg font-bold hover:text-xl">
                   {t("home:mentoring")}
                 </h2>
-                <p className="text-lg cursor-pointer">
+                <p className="cursor-pointer text-lg">
                   {t("home:mentoringtext")}
                 </p>
               </div>

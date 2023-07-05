@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState, useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import {
@@ -7,29 +9,30 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
-import "../../styles/tailwind.css";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
-import { NavLink } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const navbar = useRef(null);
+  const navbarPlaceholder = useRef(null);
   const [toggleMenu, setToggleMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbar = document.querySelector(".navbar");
-      const scrollPosition = window.pageYOffset;
-
-      if (scrollPosition > 20 * 30) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
+      window.requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        const navbarHeight = navbar.current.offsetHeight;
+        if (scrollY > 0) {
+          navbar.current.classList.add("sticky");
+          navbarPlaceholder.current.style.height = `${navbarHeight}px`;
+        } else {
+          navbar.current.classList.remove("sticky");
+          navbarPlaceholder.current.style.height = "0px";
+        }
+      });
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -38,180 +41,180 @@ const Navbar = () => {
   const { t } = useTranslation(["home"]);
 
   return (
-    <nav class="navbar sticky top-0 w-full flex justify-between items-center px-4 py-2 border-b-2 border-[#495057]">
-      <div class="logo ml-10">
-        <a href="/">Roxana Dumitrescu</a>
-      </div>
-      <div className="hidden md:flex md:items-center md:justify-between">
-        <ul className="navbar-links flex justify-center items-center text-xl list-none">
-          <li className="mx-4 cursor-pointer">
-            <NavLink
-              to="/"
-              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
-              activeclassname="text-white bg-[#343a40] border rounded-lg"
-            >
-              {t("home:home")}
-            </NavLink>
-          </li>
-          <li className="mx-4 cursor-pointer">
-            <NavLink
-              to="/about"
-              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
-              activeclassname="text-white bg-[#343a40] border rounded-lg"
-            >
-              {t("home:about")}
-            </NavLink>
-          </li>
-          <li className="mx-4 cursor-pointer">
-            <NavLink
-              to="/solutions"
-              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
-              activeclassname="text-white bg-[#343a40] border rounded-lg"
-            >
-              {t("home:products")}
-            </NavLink>
-          </li>
-          <li className="mx-4 cursor-pointer">
-            <NavLink
-              to="/events"
-              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
-              activeclassname="text-white bg-[#343a40] border rounded-lg"
-            >
-              {t("home:events")}
-            </NavLink>
-          </li>
-          <li className="mx-4 cursor-pointer">
-            <NavLink
-              to="/contact"
-              className="hover:text-white hover:bg-[#343a40] hover:border hover:rounded-lg p-1"
-              activeclassname="text-white bg-[#343a40] border rounded-lg"
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-      <div class="hidden md:flex md:items-center md:justify-between sm:flex sm:items-center sm:justify-between">
-        <ul class="social-links flex gap-4 list-none items-start justify-start">
-          <li>
-            <a
-              href="#"
-              class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
-            >
-              <FaLinkedin />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
-            >
-              <FaFacebookSquare />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
-            >
-              <FaInstagramSquare />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-            >
-              <FaTwitterSquare />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <GiHamburgerMenu
-          color="var(--color-black)"
-          fontSize={27}
-          onClick={() => setToggleMenu(true)}
-          class="flex md:hidden mr-5 cursor-pointer"
-        />
-        {toggleMenu && (
-          <div class="fixed top-0 left-0 w-full h-screen transition duration-500 ease-in-out flex flex-col z-50">
-            <MdClose
-              fontSize={27}
-              class="overlay__close text-2xl cursor-pointer absolute top-4 right-4"
-              onClick={() => setToggleMenu(false)}
-            />
-            <ul class="list-none">
-              <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="/" onClick={() => setToggleMenu(false)}>
-                  Acasa
+    <>
+      <div className="header-placeholder w-full" ref={navbarPlaceholder} />
+      <nav className="header" ref={navbar}>
+        <div className="container flex items-center justify-between">
+          <div className="logo">
+            <a href="/">Roxana Dumitrescu</a>
+          </div>
+          <ul className="navigation hidden list-none items-center justify-center text-base lg:flex lg:items-center lg:justify-between 2xl:text-xl">
+            <li>
+              <NavLink
+                to="/"
+                className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+              >
+                {t("home:home")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+              >
+                {t("home:about")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/solutions"
+                className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+              >
+                {t("home:products")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/events"
+                className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+              >
+                {t("home:events")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+          <div className="socials hidden lg:flex lg:items-center lg:justify-between">
+            <ul className="social-links flex list-none items-start justify-start gap-4">
+              <li>
+                <a
+                  href="#"
+                  className="block text-2xl text-primary  hover:text-primary/90 2xl:text-3xl"
+                >
+                  <FaLinkedin />
                 </a>
               </li>
-              <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="about" onClick={() => setToggleMenu(false)}>
-                  Despre
+              <li>
+                <a
+                  href="#"
+                  className="block text-2xl text-primary  hover:text-primary/90 2xl:text-3xl"
+                >
+                  <FaFacebookSquare />
                 </a>
               </li>
-              <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="solutions" onClick={() => setToggleMenu(false)}>
-                  Solutii
+              <li>
+                <a
+                  href="#"
+                  className="block text-2xl text-primary  hover:text-primary/90 2xl:text-3xl"
+                >
+                  <FaInstagramSquare />
                 </a>
               </li>
-              <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="events" onClick={() => setToggleMenu(false)}>
-                  Evenimente si Workshopuri
-                </a>
-              </li>
-              <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="contact" onClick={() => setToggleMenu(false)}>
-                  Contact
+              <li>
+                <a
+                  href="#"
+                  className="block text-2xl text-primary hover:text-primary/90 2xl:text-3xl"
+                >
+                  <FaTwitterSquare />
                 </a>
               </li>
             </ul>
-            <div class="flex justify-center">
-              <ul class="list-none flex gap-5">
-                <li>
-                  <a
-                    href="#"
-                    class="py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-                  >
-                    <FaLinkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-                  >
-                    <FaFacebookSquare />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-                  >
-                    <FaInstagramSquare />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-                  >
-                    <FaTwitterSquare />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="absolute top-0 left-0">
-              <LanguageDropdown class="md:hidden" />
-            </div>
           </div>
-        )}
-      </div>
-      <LanguageDropdown class="language hidden md:flex md:items-center md:justify-between sm:hidden ml-5" />
-    </nav>
+          <div>
+            <GiHamburgerMenu
+              color="var(--color-black)"
+              fontSize={27}
+              onClick={() => setToggleMenu(true)}
+              className="flex cursor-pointer lg:hidden"
+            />
+            {toggleMenu && (
+              <div className="mobile-nav">
+                <div className="container">
+                  <div className="flex items-center justify-between py-2">
+                    <LanguageDropdown className="language-selector" />
+                    <MdClose
+                      fontSize={27}
+                      className="overlay__close cursor-pointer text-2xl"
+                      onClick={() => setToggleMenu(false)}
+                    />
+                  </div>
+                  <ul className="list-none">
+                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
+                      <a href="/" onClick={() => setToggleMenu(false)}>
+                        Acasa
+                      </a>
+                    </li>
+                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
+                      <a href="about" onClick={() => setToggleMenu(false)}>
+                        Despre
+                      </a>
+                    </li>
+                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
+                      <a href="solutions" onClick={() => setToggleMenu(false)}>
+                        Solutii
+                      </a>
+                    </li>
+                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
+                      <a href="events" onClick={() => setToggleMenu(false)}>
+                        Evenimente si Workshopuri
+                      </a>
+                    </li>
+                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
+                      <a href="contact" onClick={() => setToggleMenu(false)}>
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                  <div className="flex justify-center">
+                    <ul className="flex list-none gap-5">
+                      <li>
+                        <a
+                          href="#"
+                          className="py-2 text-3xl text-primary hover:text-primary/90"
+                        >
+                          <FaLinkedin />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="py-2 text-3xl text-primary hover:text-primary/90"
+                        >
+                          <FaFacebookSquare />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="py-2 text-3xl text-primary hover:text-primary/90"
+                        >
+                          <FaInstagramSquare />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="py-2 text-3xl text-primary hover:text-primary/90"
+                        >
+                          <FaTwitterSquare />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+          <LanguageDropdown className="language-selector hidden lg:flex lg:items-center lg:justify-between" />
+        </div>
+      </nav>
+    </>
   );
 };
 

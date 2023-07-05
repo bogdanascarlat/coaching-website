@@ -7,7 +7,25 @@ module.exports = {
     "./src/**/*.vue",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+    },
+    extend: {
+      colors: {
+        primary: "#343a40",
+        secondary: "#fff5f5",
+      },
+    },
   },
   plugins: [],
 };

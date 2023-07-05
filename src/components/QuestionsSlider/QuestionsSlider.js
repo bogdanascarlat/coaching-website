@@ -47,29 +47,29 @@ const QuestionsSlider = () => {
   const { title, content } = slides[currentSlide];
 
   return (
-    <div class="flex flex-col items-center text-center mx-auto mb-40 max-w-screen-lg">
-      <h2 class="text-3xl font-bold mb-3 text-center">
+    <div className="mt-[6rem] flex flex-col items-center text-center">
+      <h2 className="mb-3 text-center text-3xl font-bold">
         {" "}
         {t("home:frequentquestions")}
       </h2>
-      <div class="h-60 flex flex-col justify-center items-center slider-content overflow-y-auto sm:w-[90%]">
+      <div className="slider-content flex h-60 flex-col items-center justify-center overflow-y-auto sm:w-[90%]">
         {slides.map((slide, index) => (
           <div key={index} className={index === currentSlide ? "" : "hidden"}>
-            <h2 class="text-2xl font-bold mb-4 mt-10">{slide.title}</h2>
-            <p class="text-lg leading-relaxed mb-6">{slide.content}</p>
+            <h2 className="mb-4 mt-10 text-2xl font-bold">{slide.title}</h2>
+            <p className="mb-6 text-lg leading-relaxed">{slide.content}</p>
           </div>
         ))}
       </div>
-      <div class="flex justify-between w-full max-w-400 sm:ml-10 sm:mr-10">
+      <div className="max-w-400 flex w-full justify-between">
         <button
           onClick={goToPreviousSlide}
-          class="flex justify-center items-center text-base font-bold px-4 py-1 border-none rounded-md bg-[#1a202c] hover:bg-[#2d3748] text-white cursor-pointer transition ease-in-out duration-200 w-[15%] h-12 sm:ml-[3rem] sm:mt-[3rem] xs:ml-[3rem] xs:mt-[3rem]"
+          className="xs:ml-[3rem] xs:mt-[3rem] flex h-12 cursor-pointer items-center justify-center rounded-md border-none bg-[#1a202c] px-4 py-1 text-base font-bold text-white transition duration-200 ease-in-out hover:bg-[#2d3748] sm:ml-[3rem] sm:mt-[3rem]"
         >
           {t("home:prevquestion")}
         </button>
         <button
           onClick={goToNextSlide}
-          class="flex justify-center items-center text-base font-bold px-4 py-1 border-none rounded-md bg-[#1a202c] hover:bg-[#2d3748] text-white cursor-pointer transition ease-in-out duration-200 w-[15%] h-12 sm:mr-[3rem] sm:mt-[3rem] xs:ml-[3rem] xs:mt-[3rem]"
+          className="xs:ml-[3rem] xs:mt-[3rem] flex h-12 cursor-pointer items-center justify-center rounded-md border-none bg-[#1a202c] px-4 py-1 text-base font-bold text-white transition duration-200 ease-in-out hover:bg-[#2d3748] sm:mr-[3rem] sm:mt-[3rem]"
         >
           {t("home:nextquestion")}
         </button>
