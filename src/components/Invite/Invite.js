@@ -18,7 +18,7 @@ const Invite = () => {
       </div>
 
       <div class="flex-1 bg-[#343a40] flex flex-col justify-center items-start ml-auto mr-auto">
-        <h2 className="logo bg-[#343a40] flex justify-between font-dancingScript text-white text-4xl mb-3">
+        <h2 className="logo bg-[#343a40] flex justify-between font-dancingScript text-white text-4xl mb-3 xs:text-center">
           Roxana Dumitrescu
         </h2>
         <div class="bg-[#343a40] mt-40 mr-12 text-2xl font-bold mb-60">

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import Form from "../../components/Form/Form";
+// import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import {
   FaFacebookSquare,
@@ -17,21 +17,19 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-[3rem]">
-        <Form />
-      </div>
+      <div className="mt-[5rem]">{/* <Form /> */}</div>
       <div class="mb-[3rem]">
         <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5 mb-5">
           {t("contact:iinviteyou")}
         </p>
         <a
           href="https://bit.ly/3owcQLe"
-          class="bg-[#343a40] text-[#f0f0f0] font-bold tracking-widest leading-tight text-lg py-2 px-6 ml-auto mr-auto rounded-md cursor-pointer h-[25%] text-center hover:bg-[#868e96] hover:text-white flex justify-center items-center xs:w-[30%] md:w-[20%]"
+          class="bg-[#343a40] text-[#f0f0f0] font-bold tracking-widest leading-tight text-lg py-2 px-6 ml-auto mr-auto rounded-md cursor-pointer h-[25%] text-center hover:bg-[#868e96] hover:text-white flex justify-center items-center w-72"
         >
           {t("contact:scheduleameeting")}
         </a>
       </div>
-      <div class="mb-[5rem] ">
+      <div class="mb-[5rem] mt-[6rem]">
         <p class="text-center items-center text-2xl font-semibold w-1/2 mx-auto mt-5 mb-5">
           {t("contact:youcanfollowmeusingthelinksbelow.")}
         </p>

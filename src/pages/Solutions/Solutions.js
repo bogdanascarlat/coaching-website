@@ -43,7 +43,7 @@ const Solutions = () => {
   return (
     <div>
       <Navbar />
-      <div className="work-section md:mb-[10rem] xs:mb-15 mt-[10rem]">
+      <div class="h-96 md:mt-[15rem] sm:mt-[5rem] xs:mt-[5rem] mb-[2rem]">
         <div class="mb-3">
           <h1 class="text-3xl font-bold mb-3 text-center">
             {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}

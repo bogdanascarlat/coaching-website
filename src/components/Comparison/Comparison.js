@@ -8,8 +8,8 @@ const Comparison = () => {
   const { t } = useTranslation(["home"]);
   return (
     <div class="w-full h-96 relative mx-auto mb-80 pt-8 md:mb-[80] sm:mb-[80]">
-      <div class="flex absolute left-10 -top-[75%] bg-transparent md:col-12">
-        <div class="w-full lg:w-1/2 flex justify-center items-center mr-20 bg-transparent">
+      <div class="flex absolute left-10 -top-[75%] bg-transparent md:col-12 ">
+        <div class="w-full lg:w-1/2 justify-center items-center mr-20 bg-transparent grid grid-cols-2 sm:grid-cols-1">
           <img src={before} alt="before" class="h-auto max-w-full z-10" />
         </div>
         <div class="w-full lg:w-1/2 mr-20 mt-10">
@@ -44,7 +44,7 @@ const Comparison = () => {
             <p class="text-lg font-semibold">{t("home:comparisonp4")}</p>
           </div>
           <div class="w-full lg:w-1/2 flex justify-center items-center ml-20 bg-transparent">
-            <img src={after} alt="after" class="h-auto max-w-full rounded-lg" />
+            <img src={after} alt="after" class="h-auto max-w-full" />
           </div>
         </div>
       </div>

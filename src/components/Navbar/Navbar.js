@@ -143,27 +143,27 @@ const Navbar = () => {
             />
             <ul class="list-none">
               <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="#home" onClick={() => setToggleMenu(false)}>
+                <a href="/" onClick={() => setToggleMenu(false)}>
                   Acasa
                 </a>
               </li>
               <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="#about" onClick={() => setToggleMenu(false)}>
+                <a href="about" onClick={() => setToggleMenu(false)}>
                   Despre
                 </a>
               </li>
               <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="#solutions" onClick={() => setToggleMenu(false)}>
+                <a href="solutions" onClick={() => setToggleMenu(false)}>
                   Solutii
                 </a>
               </li>
               <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="#awards" onClick={() => setToggleMenu(false)}>
+                <a href="events" onClick={() => setToggleMenu(false)}>
                   Evenimente si Workshopuri
                 </a>
               </li>
               <li class="my-8 cursor-pointer text-black text-2xl font-medium text-center font-sans hover:text-[#343a40]">
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
+                <a href="contact" onClick={() => setToggleMenu(false)}>
                   Contact
                 </a>
               </li>

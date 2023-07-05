@@ -13,7 +13,7 @@ function Work() {
   const { t } = useTranslation(["home"]);
 
   return (
-    <div className="work-section py-20 mt-96 mb-[10rem]">
+    <div className="work-section py-20 mb-[10rem] sm:mt-[25rem]">
       <div className="mb-[3rem]">
         <h1 className="text-3xl font-bold mb-3 text-center">
           {t("home:howwillweworktogether")}

@@ -20,21 +20,23 @@ const Header = () => {
         class="w-full md:w-[35rem] mr-[5rem]"
       />
       <div class="justify-center items-center my-auto">
-        <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3">
+        <h1 class="text-4xl font-bold md:mb-16 leading-9 sm:text-4xl sm:mt-3 sm:mb-3 sm:text-center xs:mb-[3rem]">
           {t("home:inallaspectsofourlivesbalanceiskey")}
         </h1>
-        <p class="text-lg mb-5 leading-relaxed sm:text-base">
+        <p class="text-lg mb-5 leading-relaxed sm:text-base md:pt-[8rem] sm:text-center">
           {t(
             "home:iguideyoutoidentifythesourcesofstressandtodeveloptogethereffectivestrategiesinmanagingittofindbalanceinallaspectsofyourlife."
           )}
         </p>
-        <button
-          type="button"
-          class="bg-[#343a40] text-white font-bold tracking-wider text-sm rounded-md py-2 px-4 hover:bg-[#495057] sm:text-base"
-          onClick={toggleNewText}
-        >
-          {showNewText ? t("home:hide") : t("home:findmore")}
-        </button>
+        <div class="flex justify-center sm:justify-center">
+          <button
+            type="button"
+            class="bg-[#343a40] text-white font-bold tracking-wider text-sm rounded-md py-2 px-4 hover:bg-[#495057] sm:text-base"
+            onClick={toggleNewText}
+          >
+            {showNewText ? t("home:hide") : t("home:findmore")}
+          </button>
+        </div>
         {showNewText && (
           <div class="font-bold mt-10">
             <p class="mb-5">{t("home:p1")}</p>

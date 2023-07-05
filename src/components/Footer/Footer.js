@@ -59,7 +59,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div class="w-full h-full md:w-1/6 flex flex-col text-left">
+        <div class="w-full h-full md:w-1/6 flex flex-col text-left sm:mb-[1rem]">
           <h3 class="text-2xl text-black mt-5 text-left">
             {" "}
             {t("home:address")}
