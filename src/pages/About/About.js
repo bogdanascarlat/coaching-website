@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="mb-32 ml-auto mr-auto mt-[5rem] grid w-[90%] grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="mb-[6rem] ml-auto mr-auto mt-[6rem] grid w-[90%] grid-cols-1 gap-4 md:grid-cols-2">
         <img
           src={invite}
           alt="presentation-photo"

@@ -37,7 +37,7 @@ const Contact = () => {
           <ul className="flex list-none gap-4">
             <li>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/roxanadum/"
                 className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaLinkedin />
@@ -45,7 +45,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.facebook.com/DiscoverYourSelfbyRoxana"
                 className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaFacebookSquare />
@@ -53,18 +53,10 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.instagram.com/roxana_dumitrescu_coach/"
                 className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaInstagramSquare />
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-              >
-                <FaTwitterSquare />
               </a>
             </li>
           </ul>

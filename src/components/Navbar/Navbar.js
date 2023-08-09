@@ -94,7 +94,7 @@ const Navbar = () => {
             <ul className="social-links flex list-none items-start justify-start gap-4">
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/roxanadum/"
                   className="block text-2xl text-primary  hover:text-primary/90 2xl:text-3xl"
                 >
                   <FaLinkedin />
@@ -102,7 +102,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/DiscoverYourSelfbyRoxana"
                   className="block text-2xl text-primary  hover:text-primary/90 2xl:text-3xl"
                 >
                   <FaFacebookSquare />
@@ -110,18 +110,10 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/roxana_dumitrescu_coach/"
                   className="block text-2xl text-primary  hover:text-primary/90 2xl:text-3xl"
                 >
                   <FaInstagramSquare />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-2xl text-primary hover:text-primary/90 2xl:text-3xl"
-                >
-                  <FaTwitterSquare />
                 </a>
               </li>
             </ul>

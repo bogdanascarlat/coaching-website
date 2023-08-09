@@ -43,7 +43,7 @@ const Solutions = () => {
   return (
     <div>
       <Navbar />
-      <div className="xs:mt-[5rem] mb-[2rem] h-96 sm:mt-[5rem] md:mt-[15rem]">
+      <div className="mt-[6rem] mb-[25rem] h-96">
         <div className="mb-3">
           <h1 className="mb-3 text-center text-3xl font-bold">
             {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}
@@ -78,7 +78,7 @@ const Solutions = () => {
           {activeComponent}
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

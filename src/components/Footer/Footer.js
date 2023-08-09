@@ -27,7 +27,7 @@ const Footer = () => {
           <ul className="mt-5 flex list-none items-start justify-start gap-4">
             <li>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/roxanadum/"
                 className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaLinkedin />
@@ -35,7 +35,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.facebook.com/DiscoverYourSelfbyRoxana"
                 className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaFacebookSquare />
@@ -43,26 +43,17 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.instagram.com/roxana_dumitrescu_coach/"
                 className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaInstagramSquare />
               </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 text-3xl text-[#343a40] hover:text-[#495057]"
-              >
-                <FaTwitterSquare />
-              </a>
-            </li>
           </ul>
         </div>
-
+        
         <div className="flex h-full w-full flex-col text-left sm:mb-[1rem] md:w-1/6">
-          <h3 className="mt-5 text-left text-2xl text-black">
-            {" "}
+          <h3 className="mt-5 text-left text-2xl text-black font-bold">
             {t("home:address")}
           </h3>
           <div className="flex flex-col text-left">
@@ -77,7 +68,7 @@ const Footer = () => {
         </div>
 
         <div className="flex h-full w-full flex-col text-left md:w-1/6">
-          <h3 className="text-left text-2xl text-black">{t("home:links")}</h3>
+          <h3 className="mt-5 text-left text-2xl text-black font-bold">{t("home:links")}</h3>
           <div className="flex flex-col text-left">
             <a
               href="#"
