@@ -7,6 +7,7 @@ import Work from "../../components/Work/Work";
 import Invite from "../../components/Invite/Invite";
 import QuestionsSlider from "../../components/QuestionsSlider/QuestionsSlider";
 import Footer from "../../components/Footer/Footer";
+import Form from "../../components/Form/Form";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Work />
         <Invite />
         <QuestionsSlider />
+        <Form/>
       </main>
       <Footer />
     </>

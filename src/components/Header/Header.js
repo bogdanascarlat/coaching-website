@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import inspiringPhoto from "../../assets/intro-photo.jpg";
+
 
 import { useTranslation } from "react-i18next";
 
@@ -9,8 +10,8 @@ const Header = () => {
   const toggleNewText = () => {
     setShowNewText(!showNewText);
   };
-
   const { t } = useTranslation(["home"]);
+
 
   return (
     <div className="mt-[6rem] grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -20,10 +21,10 @@ const Header = () => {
         className="mr-[5rem] w-full md:w-[35rem]"
       />
       <div className="my-auto items-center justify-center">
-        <h1 className="xs:mb-[3rem] text-4xl font-bold leading-9 sm:mb-3 sm:mt-3 sm:text-center sm:text-4xl md:mb-16">
+      <h1 className="sliding-paragraph text-4xl font-bold leading-9 text-center sm:text-4xl my-10 md:my-0 xl:my-0">
           {t("home:inallaspectsofourlivesbalanceiskey")}
         </h1>
-        <p className="mb-5 text-lg leading-relaxed sm:text-center sm:text-base md:pt-[8rem]">
+        <p className="mb-5 text-lg leading-relaxed text-center sm:text-base md:pt-[8rem]">
           {t(
             "home:iguideyoutoidentifythesourcesofstressandtodeveloptogethereffectivestrategiesinmanagingittofindbalanceinallaspectsofyourlife."
           )}

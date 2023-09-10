@@ -1,12 +1,8 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import empty_state from "../../assets/4282101.jpg";
 
-import { useTranslation } from "react-i18next";
-
-const Events = () => {
-  const { t } = useTranslation(["events"]);
+const Podcast = () => {
   return (
     <div>
       <Navbar />
@@ -26,4 +22,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Podcast;

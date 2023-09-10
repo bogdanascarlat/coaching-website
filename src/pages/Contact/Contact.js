@@ -5,7 +5,6 @@ import Footer from "../../components/Footer/Footer";
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
 

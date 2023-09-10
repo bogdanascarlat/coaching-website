@@ -4,7 +4,7 @@ import i18next from "i18next";
 import Home from "../src/pages/Home/Home";
 import About from "../src/pages/About/About";
 import Solutions from "../src/pages/Solutions/Solutions";
-import Events from "../src/pages/Events/Events";
+import Podcast from "./pages/Events/Podcast";
 import Contact from "../src/pages/Contact/Contact";
 
 import "./styles/tailwind.css";
@@ -23,9 +23,17 @@ const router = createBrowserRouter([
     element: <Solutions />,
   },
   {
-    path: "/events",
-    element: <Events />,
+    path: "/podcast",
+    element: <Podcast />,
   },
+  // {
+  //   path: "/events",
+  //   element: <Events />,
+  // },
+  // {
+  //   path: "/workshops",
+  //   element: <Workshops />,
+  // },
   {
     path: "/contact",
     element: <Contact />,

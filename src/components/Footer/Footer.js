@@ -3,7 +3,6 @@ import React from "react";
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
 
@@ -59,10 +58,7 @@ const Footer = () => {
           <div className="flex flex-col text-left">
             <p className="py-2 text-lg text-gray-600"> {t("home:bucharest")}</p>
             <p className="py-2 text-lg text-gray-600">
-              <i> {t("home:phone")}</i> <b>(+40)74 123 4560</b>
-            </p>
-            <p className="py-2 text-lg text-gray-600">
-              <i>Email:</i> <b>email@gmail.com</b>
+              <i>Email:</i> <b>roxana.dumitrescu.coach@gmail.com</b>
             </p>
           </div>
         </div>

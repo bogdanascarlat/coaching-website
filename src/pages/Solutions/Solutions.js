@@ -43,9 +43,9 @@ const Solutions = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-[6rem] mb-[25rem] h-96">
+      <div className="mt-[6rem] mb-[6rem]">
         <div className="mb-3">
-          <h1 className="mb-3 text-center text-3xl font-bold">
+          <h1 className="sliding-paragraph mb-3 text-center text-3xl font-bold">
             {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}
           </h1>
           <p className="mx-auto mt-5 w-1/2 items-center text-center text-2xl font-semibold">
@@ -60,7 +60,7 @@ const Solutions = () => {
               onClick={() => handleButtonClick("oneToOne")}
               class={buttonClass("oneToOne")}
             >
-              One-to-one
+               {t("solutions:onetoone")}
             </button>
             <button
               onClick={() => handleButtonClick("group")}
@@ -72,7 +72,7 @@ const Solutions = () => {
               onClick={() => handleButtonClick("coaching")}
               class={buttonClass("coaching")}
             >
-              Executive Coaching
+             {t("solutions:coaching")}
             </button>
           </div>
           {activeComponent}

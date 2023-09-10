@@ -16,35 +16,37 @@ function Work() {
           {t("home:iwillhelpyouidentifythebestoptionaccordingtoyourneeds.")}
         </p>
       </div>
-      <div className="grid grid-cols-5 gap-4">
-        <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
-          <div className="text-center p-3">
-            <h2 className="mb-3 font-bold">{t("home:calibration")}</h2>
-            <p className="flex flex-col items-center justify-center">{t("home:calibrationtext")}</p>
+      <div class="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
+            <div className="text-center p-3">
+              <h2 className="mb-3 font-bold">{t("home:calibration")}</h2>
+              <p className="flex flex-col items-center justify-center">{t("home:calibrationtext")}</p>
+            </div>
           </div>
-        </div>
-        <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
-          <div className="text-center p-3">
-            <h2 className="mb-3 font-bold">{t("home:collaboration")}</h2>
-            <p className="flex flex-col items-center justify-center">{t("home:collaborationtext")}</p>
+          <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
+            <div className="text-center p-3">
+              <h2 className="mb-3 font-bold">{t("home:collaboration")}</h2>
+              <p className="flex flex-col items-center justify-center">{t("home:collaborationtext")}</p>
+            </div>
           </div>
-        </div>
-        <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
-          <div className="text-center p-3">
-            <h2 className="mb-3 font-bold">{t("home:theactualthing")}</h2>
-            <p className="flex flex-col items-center justify-center">{t("home:theactualthingtext")}</p>
+          <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
+            <div className="text-center p-3">
+              <h2 className="mb-3 font-bold">{t("home:theactualthing")}</h2>
+              <p className="flex flex-col items-center justify-center">{t("home:theactualthingtext")}</p>
+            </div>
           </div>
-        </div>
-        <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
-          <div className="text-center p-3">
-            <h2 className="mb-3 font-bold">{t("home:analyze")}</h2>
-            <p className="flex flex-col items-center justify-center">{t("home:analyzetext")}</p>
+          <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
+            <div className="text-center p-3">
+              <h2 className="mb-3 font-bold">{t("home:analyze")}</h2>
+              <p className="flex flex-col items-center justify-center">{t("home:analyzetext")}</p>
+            </div>
           </div>
-        </div>
-        <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
-          <div className="text-center p-3">
-            <h2 className="mb-3 font-bold">{t("home:mentoring")}</h2>
-            <p className="flex flex-col items-center justify-center">{t("home:mentoringtext")}</p>
+          <div className="border border-slate-400 shadow-xl rounded-lg flex flex-col items-center justify-center">
+            <div className="text-center p-3">
+              <h2 className="mb-3 font-bold">{t("home:mentoring")}</h2>
+              <p className="flex flex-col items-center justify-center">{t("home:mentoringtext")}</p>
+            </div>
           </div>
         </div>
       </div>

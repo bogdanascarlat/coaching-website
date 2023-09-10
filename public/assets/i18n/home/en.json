@@ -1,5 +1,5 @@
 {
-  "inallaspectsofourlivesbalanceiskey": "In all aspects of our lives, balance is key",
+  "inallaspectsofourlivesbalanceiskey": "In all aspects of our lives, balance is the key",
   "iguideyoutoidentifythesourcesofstressandtodeveloptogethereffectivestrategiesinmanagingittofindbalanceinallaspectsofyourlife.": "I guide you to identify the sources of stress and to develop together effective strategies in managing it, to find balance in all aspects of your life.",
   "findmore": "Find more",
   "hide": "Hide",
@@ -61,5 +61,7 @@
   "home": "Home",
   "about": "About",
   "products": "Solutions",
-  "events": "Events and Workshops"
+  "events": "Events",
+  "podcast": "Podcast",
+  "workshops":"Workshops"
 }

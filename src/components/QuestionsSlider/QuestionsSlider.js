@@ -44,11 +44,9 @@ const QuestionsSlider = () => {
     setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
   };
 
-  const { title, content } = slides[currentSlide];
-
   return (
     <div className="mt-[6rem] flex flex-col items-center text-center">
-      <h2 className="mb-3 text-center text-3xl font-bold">
+      <h2 className="mb-10 md:mb-5 xl:mb-5 text-center text-3xl font-bold">
         {" "}
         {t("home:frequentquestions")}
       </h2>

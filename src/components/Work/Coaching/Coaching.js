@@ -3,7 +3,7 @@ import "./Coaching.css";
 import coaching from "../../../assets/meeting.jpg";
 
 const Coaching = () => (
-  <div className="coaching-section mb-40 ml-auto mr-auto grid h-80 w-[90%] grid-cols-1 bg-[#343a40] md:grid-cols-2">
+  <div className="coaching-section mb-40 md:mb-40 xl:mb-40 ml-auto mr-auto grid w-[90%] grid-cols-1 bg-[#343a40] md:grid-cols-2">
     <div className="bg-dark-grey h-full flex-1 bg-[#343a40]">
       <img src={coaching} alt="coaching" className="bg-[#343a40] p-16" />
     </div>

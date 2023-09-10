@@ -6,7 +6,6 @@ import { MdClose } from "react-icons/md";
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
@@ -39,6 +38,17 @@ const Navbar = () => {
   }, []);
 
   const { t } = useTranslation(["home"]);
+  
+  const options = [
+    { link: '/podcast', label: t('home:podcast') },
+    { link: '/events', label: t('home:events') },
+    { link: '/workshops', label: t('home:workshops') },
+  ];
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
     <>
@@ -73,14 +83,41 @@ const Navbar = () => {
                 {t("home:products")}
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/events"
-                className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
-              >
-                {t("home:events")}
-              </NavLink>
-            </li>
+            <li className="mx-2 relative">
+              <div className="relative inline-flex items-center">
+                <button
+                  onClick={toggleDropdown}
+                  className="px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
+                >
+                  <span className="mr-1">{t('home:events')}</span>
+                  <svg
+                    className="h-5 w-5 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+                {dropdownOpen && (
+                  <div className="absolute top-full left-0 z-10 w-[10rem] bg-white border border-gray-300">
+                    {options.map((item) => (
+                      <NavLink
+                        key={item.link}
+                        to={item.link}
+                        className="px-4 py-2 hover:bg-primary hover:text-white inline-flex items-center"
+                      >
+                        <span className="mr-1">{item.label}</span>
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </li>           
             <li>
               <NavLink
                 to="/contact"
@@ -139,23 +176,53 @@ const Navbar = () => {
                   <ul className="list-none">
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
                       <a href="/" onClick={() => setToggleMenu(false)}>
-                        Acasa
+                      {t("home:home")}
                       </a>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
                       <a href="about" onClick={() => setToggleMenu(false)}>
-                        Despre
+                      {t("home:about")}
                       </a>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
                       <a href="solutions" onClick={() => setToggleMenu(false)}>
-                        Solutii
+                      {t("home:products")}
                       </a>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
-                      <a href="events" onClick={() => setToggleMenu(false)}>
-                        Evenimente si Workshopuri
-                      </a>
+                      <div className="relative inline-flex items-center">
+                        <button
+                          onClick={toggleDropdown}
+                          className="px-4 py-2 hover:rounded-lg hover:text-primary/90 inline-flex items-center"
+                        >
+                          <span className="mr-1">{t('home:events')}</span>
+                          <svg
+                            className="h-5 w-5 text-primary"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </button>
+                        {dropdownOpen && (
+                          <div className="absolute top-full left-0 z-10 w-[10rem] bg-white border border-gray-300">
+                            {options.map((item) => (
+                              <NavLink
+                                key={item.link}
+                                to={item.link}
+                                className="px-4 py-2 hover:bg-primary hover:text-white inline-flex items-center"
+                              >
+                                <span className="mr-1">{item.label}</span>
+                              </NavLink>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
                       <a href="contact" onClick={() => setToggleMenu(false)}>
@@ -187,14 +254,6 @@ const Navbar = () => {
                           className="py-2 text-3xl text-primary hover:text-primary/90"
                         >
                           <FaInstagramSquare />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="py-2 text-3xl text-primary hover:text-primary/90"
-                        >
-                          <FaTwitterSquare />
                         </a>
                       </li>
                     </ul>
