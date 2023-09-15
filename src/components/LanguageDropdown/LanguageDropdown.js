@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const LanguageDropdown = (props) => {
   const [language, setLanguage] = React.useState("ro"); // default language is Ro
@@ -43,7 +42,10 @@ const LanguageDropdown = (props) => {
         </svg>
       </button>
       {isDropdownOpen && (
-        <div className="absolute right-0 mt-2 w-24 rounded-md bg-white shadow-lg">
+        <div
+          className="absolute right-0 top-full mt-2 w-24 rounded-md bg-white shadow-lg"
+          style={{ zIndex: 10 }} // Add a zIndex to make sure it's above other content
+        >
           <div
             className="py-1"
             role="menu"

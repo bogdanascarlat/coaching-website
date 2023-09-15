@@ -8,6 +8,7 @@ import Invite from "../../components/Invite/Invite";
 import QuestionsSlider from "../../components/QuestionsSlider/QuestionsSlider";
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form/Form";
+import ReviewCarousel from "../../components/ReviewCarousel/ReviewCarousel";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <Work />
         <Invite />
         <QuestionsSlider />
+        <ReviewCarousel/>
         <Form/>
       </main>
       <Footer />

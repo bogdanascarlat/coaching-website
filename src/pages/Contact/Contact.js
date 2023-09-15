@@ -16,14 +16,14 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-[5rem]">{/* <Form /> */}</div>
+      <div className="mt-[7.5rem] mb-[7.5rem]"></div>
       <div className="mb-[3rem]">
         <p className="mx-auto mb-5 mt-5 w-1/2 items-center text-center text-2xl font-semibold">
           {t("contact:iinviteyou")}
         </p>
         <a
           href="https://bit.ly/3owcQLe"
-          className="ml-auto mr-auto flex h-[25%] w-72 cursor-pointer items-center justify-center rounded-md bg-[#343a40] px-6 py-2 text-center text-lg font-bold leading-tight tracking-widest text-[#f0f0f0] hover:bg-[#868e96] hover:text-white"
+          className="ml-auto mr-auto flex h-[25%] w-72 cursor-pointer items-center justify-center rounded-md bg-[#343a40] px-6 py-3.5 text-center text-lg font-bold leading-tight tracking-widest text-[#f0f0f0] hover:bg-[#868e96] hover:text-white"
         >
           {t("contact:scheduleameeting")}
         </a>
@@ -37,7 +37,7 @@ const Contact = () => {
             <li>
               <a
                 href="https://www.linkedin.com/in/roxanadum/"
-                className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-4xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaLinkedin />
               </a>
@@ -45,7 +45,7 @@ const Contact = () => {
             <li>
               <a
                 href="https://www.facebook.com/DiscoverYourSelfbyRoxana"
-                className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-4xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaFacebookSquare />
               </a>
@@ -53,7 +53,7 @@ const Contact = () => {
             <li>
               <a
                 href="https://www.instagram.com/roxana_dumitrescu_coach/"
-                className="block py-2 text-3xl  text-[#343a40] hover:text-[#495057]"
+                className="block py-2 text-4xl  text-[#343a40] hover:text-[#495057]"
               >
                 <FaInstagramSquare />
               </a>

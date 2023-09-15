@@ -43,9 +43,9 @@ const Solutions = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-[6rem] mb-[6rem]">
+      <div className="mt-[7.5rem] mb-[7.5rem]">
         <div className="mb-3">
-          <h1 className="sliding-paragraph mb-3 text-center text-3xl font-bold">
+          <h1 className="sliding-paragraph mb-3 text-center text-4xl font-bold">
             {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}
           </h1>
           <p className="mx-auto mt-5 w-1/2 items-center text-center text-2xl font-semibold">

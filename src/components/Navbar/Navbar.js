@@ -41,7 +41,7 @@ const Navbar = () => {
   
   const options = [
     { link: '/podcast', label: t('home:podcast') },
-    { link: '/events', label: t('home:events') },
+    { link: '/programs', label: t('home:programs') },
     { link: '/workshops', label: t('home:workshops') },
   ];
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -84,39 +84,43 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="mx-2 relative">
-              <div className="relative inline-flex items-center">
-                <button
-                  onClick={toggleDropdown}
-                  className="px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
-                >
+            <div className="relative inline-flex items-center">
+              <button
+                onClick={toggleDropdown}
+                className="px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
+              >
+                <div className="flex items-center">
                   <span className="mr-1">{t('home:events')}</span>
-                  <svg
-                    className="h-5 w-5 text-primary"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
-                {dropdownOpen && (
-                  <div className="absolute top-full left-0 z-10 w-[10rem] bg-white border border-gray-300">
-                    {options.map((item) => (
-                      <NavLink
-                        key={item.link}
-                        to={item.link}
-                        className="px-4 py-2 hover:bg-primary hover:text-white inline-flex items-center"
-                      >
-                        <span className="mr-1">{item.label}</span>
-                      </NavLink>
-                    ))}
-                  </div>
-                )}
-              </div>
+                  <span className="hover:text-white">
+                    <svg
+                      className="h-5 w-5 text-primary hover:text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </button>
+              {dropdownOpen && (
+                <div className="absolute top-full left-0 z-10 w-[10rem] bg-white border border-gray-300">
+                  {options.map((item) => (
+                    <NavLink
+                      key={item.link}
+                      to={item.link}
+                      className="px-4 py-2 hover:bg-primary hover:text-white inline-flex items-center"
+                    >
+                      <span className="mr-1">{item.label}</span>
+                    </NavLink>
+                  ))}
+                </div>
+              )}
+            </div>
             </li>           
             <li>
               <NavLink

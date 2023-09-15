@@ -110,7 +110,7 @@ const About = () => {
           <p className="mb-5">{t("about:expp8")}</p>
         </div>
       </div>
-      <div className="mb-[6rem] md:mb-[6rem] xl:mb-[6rem] ml-auto mr-auto mt-[6rem] md:mt-[6rem] xl:mt-[6rem] xl:mt-[6rem] grid w-[90%] grid-cols-1 gap-4 bg-[#343a40] md:grid-cols-2 lg:grid-cols-2">
+      <div className="mb-[6rem] md:mb-[6rem] xl:mb-[6rem] ml-auto mr-auto mt-[6rem] md:mt-[6rem] xl:mt-[6rem] grid w-[90%] grid-cols-1 gap-4 bg-[#343a40] md:grid-cols-2 lg:grid-cols-2">
         <div className="bg-dark-grey flex-1 bg-[#343a40]">
           <img
             src={question}
@@ -119,7 +119,7 @@ const About = () => {
           />
         </div>
         <div className="ml-auto text-center md:text-justify lg:text-justify mr-auto flex flex-1 flex-col items-start justify-center bg-[#343a40]">
-          <h2 className="bg-[#343a40] text-3xl font-bold leading-9 text-white mb-6 md:mb-14 lg:mb-14 sm:mt-3">
+          <h2 className="bg-[#343a40] text-3xl font-bold leading-9 text-white mb-6 mr-12 md:mb-14 lg:mb-14 sm:mt-3">
             {t("about:why")}
           </h2>
           <div className="mr-12 bg-[#343a40]">
@@ -209,7 +209,7 @@ const About = () => {
                   {t("about:exndtext2")}
                 </p>
                 <p className="mb-5 bg-transparent text-xl text-white">
-                  {t("about:exndtext3")}
+                  {t("about:endtext3")}
                 </p>
               </div>
               <div className="mt-20 mb-10 w-[50%] bg-transparent text-center text-2xl text-white">
