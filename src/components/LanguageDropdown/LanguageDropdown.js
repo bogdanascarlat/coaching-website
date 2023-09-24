@@ -5,7 +5,7 @@ const LanguageDropdown = (props) => {
   const [language, setLanguage] = React.useState("ro"); // default language is Ro
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false); // initial state of language options dropdown is closed
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   React.useEffect(() => {
     setLanguage(i18n.language);
@@ -43,17 +43,17 @@ const LanguageDropdown = (props) => {
       </button>
       {isDropdownOpen && (
         <div
-          className="absolute right-0 top-full mt-2 w-24 rounded-md bg-white shadow-lg"
+          className="absolute right-0 top-full mt-2 w-24 rounded-md bg-primary border border-gray-300 text-white shadow-lg"
           style={{ zIndex: 10 }} // Add a zIndex to make sure it's above other content
         >
           <div
-            className="py-1"
+            className="py-1 text-2xl"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
             <button
-              className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#343a40]"
+              className="block w-full px-4 py-2 text-left text-sm text-white hover:underline text-2xl"
               role="menuitem"
               value="en"
               onClick={handleLanguageSelect}
@@ -61,7 +61,7 @@ const LanguageDropdown = (props) => {
               English
             </button>
             <button
-              className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#343a40]"
+              className="block w-full px-4 py-2 text-left text-sm text-white hover:hover:underline text-2xl"
               role="menuitem"
               value="ro"
               onClick={handleLanguageSelect}

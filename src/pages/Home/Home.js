@@ -7,7 +7,7 @@ import Work from "../../components/Work/Work";
 import Invite from "../../components/Invite/Invite";
 import QuestionsSlider from "../../components/QuestionsSlider/QuestionsSlider";
 import Footer from "../../components/Footer/Footer";
-import Form from "../../components/Form/Form";
+// import Form from "../../components/Form/Form";
 import ReviewCarousel from "../../components/ReviewCarousel/ReviewCarousel";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
         <Invite />
         <QuestionsSlider />
         <ReviewCarousel/>
-        <Form/>
+        {/* <Form/> */}
       </main>
       <Footer />
     </>

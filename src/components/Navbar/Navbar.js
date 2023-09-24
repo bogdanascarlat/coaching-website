@@ -83,44 +83,46 @@ const Navbar = () => {
                 {t("home:products")}
               </NavLink>
             </li>
-            <li className="mx-2 relative">
-            <div className="relative inline-flex items-center">
-              <button
-                onClick={toggleDropdown}
-                className="px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
-              >
-                <div className="flex items-center">
-                  <span className="mr-1">{t('home:events')}</span>
-                  <span className="hover:text-white">
-                    <svg
-                      className="h-5 w-5 text-primary hover:text-white"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </button>
-              {dropdownOpen && (
-                <div className="absolute top-full left-0 z-10 w-[10rem] bg-white border border-gray-300">
-                  {options.map((item) => (
-                    <NavLink
-                      key={item.link}
-                      to={item.link}
-                      className="px-4 py-2 hover:bg-primary hover:text-white inline-flex items-center"
-                    >
-                      <span className="mr-1">{item.label}</span>
-                    </NavLink>
-                  ))}
-                </div>
-              )}
-            </div>
+            <li className="mx-2 relative z-50">
+              <div className="relative inline-flex items-center z-50">
+                <button
+                  onClick={toggleDropdown}
+                  className="px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
+                >
+                  <div className="flex items-center">
+                    <span className="mr-1">{t('home:events')}</span>
+                    <span className="hover:text-white">
+                      <svg
+                        className="h-5 w-5 text-primary hover:text-white"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                {dropdownOpen && (
+                  <div className="absolute top-full left-0 z-100 w-[10rem] bg-primary border border-gray-300">
+                    {options.map((item) => (
+                      <ul>
+                        <NavLink
+                          key={item.link}
+                          to={item.link}
+                          className="px-4 py-2 text-lg text-white hover:underline"
+                        >
+                          <span className="mr-1">{item.label}</span>
+                        </NavLink>
+                      </ul>
+                    ))}
+                  </div>
+                )}
+              </div>
             </li>           
             <li>
               <NavLink
@@ -193,8 +195,8 @@ const Navbar = () => {
                       {t("home:products")}
                       </a>
                     </li>
-                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
-                      <div className="relative inline-flex items-center">
+                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90 z-100" style={{ zIndex: 100 }}>
+                      <div className="relative inline-flex z-100" style={{ zIndex: 100 }}>
                         <button
                           onClick={toggleDropdown}
                           className="px-4 py-2 hover:rounded-lg hover:text-primary/90 inline-flex items-center"
@@ -214,15 +216,17 @@ const Navbar = () => {
                           </svg>
                         </button>
                         {dropdownOpen && (
-                          <div className="absolute top-full left-0 z-10 w-[10rem] bg-white border border-gray-300">
+                          <div className="absolute left-[11rem] top-4 w-[8rem] z-10 bg-primary border border-gray-300 justify-start">
                             {options.map((item) => (
-                              <NavLink
-                                key={item.link}
-                                to={item.link}
-                                className="px-4 py-2 hover:bg-primary hover:text-white inline-flex items-center"
-                              >
-                                <span className="mr-1">{item.label}</span>
-                              </NavLink>
+                              <ul className="justify-start">
+                                <NavLink
+                                  key={item.link}
+                                  to={item.link}
+                                  className="py-2 pl-2 text-lg text-white hover:underline flex justify-start"
+                                >
+                                  <span className="mr-1">{item.label}</span>
+                                </NavLink>
+                              </ul>
                             ))}
                           </div>
                         )}

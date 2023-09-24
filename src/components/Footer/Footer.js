@@ -1,15 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, {useState} from "react";
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaInstagramSquare,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+
 
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation(["home"]);
+  
+  const options = [
+    { link: '/podcast', label: t('home:podcast') },
+    { link: '/programs', label: t('home:programs') },
+    { link: '/workshops', label: t('home:workshops') },
+  ];
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
     <div className="mb-3 border-t-2 border-[#495057] bg-[#fff5f5]">
@@ -66,7 +79,82 @@ const Footer = () => {
         <div className="flex h-full w-full flex-col text-left md:w-1/6">
           <h3 className="mt-5 text-left text-2xl text-black font-bold">{t("home:links")}</h3>
           <div className="flex flex-col text-left">
-            <a
+          <ul className="">
+            <li>
+              <NavLink
+                to="/"
+                className="py-2 text-lg text-gray-700 hover:underline"
+              >
+                {t("home:home")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className="py-2 text-lg text-gray-700 hover:underline"
+              >
+                {t("home:about")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/solutions"
+                className="py-2 text-lg text-gray-700 hover:underline"
+              >
+                {t("home:products")}
+              </NavLink>
+            </li>
+            <li className="relative">
+              <div className="relative inline-flex items-center">
+                <button
+                  onClick={toggleDropdown}
+                  className="text-lg text-gray-700 hover:underline"
+                >
+                  <div className="flex items-center">
+                    <span className="mr-1">{t('home:events')}</span>
+                    <span>
+                      <svg
+                        className="h-5 w-5 text-primary"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                {dropdownOpen && (
+                  <div className="absolute left-[8rem] top-1 w-[8rem] z-10 bg-primary border border-gray-300">
+                    {options.map((item) => (
+                      <ul>
+                        <NavLink
+                          key={item.link}
+                          to={item.link}
+                          className="py-2 text-lg text-white hover:underline"
+                        >
+                          <span className="mr-1">{item.label}</span>
+                        </NavLink>
+                      </ul>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </li>           
+            <li>
+              <NavLink
+                to="/contact"
+                className="z-100 py-2 text-lg text-gray-700 hover:underline"
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+            {/* <a
               href="#"
               className="block py-2 text-lg text-gray-700 hover:underline"
             >
@@ -99,7 +187,7 @@ const Footer = () => {
               className="block py-2 text-lg text-gray-700 hover:underline"
             >
               <i className="fas fa-arrow-right"></i>Contact
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

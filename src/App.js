@@ -5,6 +5,8 @@ import Home from "../src/pages/Home/Home";
 import About from "../src/pages/About/About";
 import Solutions from "../src/pages/Solutions/Solutions";
 import Podcast from "./pages/Events/Podcast";
+import Programs from "./pages/Events/Programs";
+import Workshops from "./pages/Events/Workshops";
 import Contact from "../src/pages/Contact/Contact";
 
 import "./styles/tailwind.css";
@@ -26,14 +28,14 @@ const router = createBrowserRouter([
     path: "/podcast",
     element: <Podcast />,
   },
-  // {
-  //   path: "/events",
-  //   element: <Events />,
-  // },
-  // {
-  //   path: "/workshops",
-  //   element: <Workshops />,
-  // },
+  {
+    path: "/programs",
+    element: <Programs />,
+  },
+  {
+    path: "/workshops",
+    element: <Workshops />,
+  },
   {
     path: "/contact",
     element: <Contact />,
