@@ -17,7 +17,7 @@ const Programs = () => {
       >
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-white text-center w-[70%] md:w-[70%] xl:w-full">
+              <div className="text-white text-center w-[60%] md:w-[60%] xl:w-[70%]">
                 <h1 className="sliding-paragraph text-5xl font-bold leading-9 text-center sm:text-4xl my-10 md:my-0 xl:my-0"> {t("events:coming-soon")}</h1>
                 <p className="mt-[8rem] text-3xl mx-5">{t("events:follow-me")}</p>
               </div>
