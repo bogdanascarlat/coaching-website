@@ -66,12 +66,12 @@ const Footer = () => {
         
         <div className="flex h-full w-full flex-col text-left sm:mb-[1rem] md:w-1/6">
           <h3 className="mt-5 text-left text-2xl text-black font-bold">
-            {t("home:address")}
+            {t("home:contact")}
           </h3>
           <div className="flex flex-col text-left">
-            <p className="py-2 text-lg text-gray-600"> {t("home:bucharest")}</p>
+            <p className="py-2 text-lg text-gray-600"><span className="font-bold">{t("home:address")}</span> {t("home:bucharest")}</p>
             <p className="py-2 text-lg text-gray-600">
-              <i>Email:</i> <b>roxana.dumitrescu.coach@gmail.com</b>
+              <span className="font-bold">Email:</span> <b>roxana.dumitrescu.coach@gmail.com</b>
             </p>
           </div>
         </div>

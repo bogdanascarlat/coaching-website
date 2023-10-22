@@ -58,7 +58,7 @@ const Navbar = () => {
           <div className="logo">
             <a href="/">Roxana Dumitrescu</a>
           </div>
-          <ul className="navigation hidden list-none items-center justify-center text-base lg:flex lg:items-center lg:justify-between 2xl:text-xl">
+          <ul className="navigation hidden list-none items-center justify-center text-base lg:flex lg:items-center lg:justify-between 2xl:text-xl z-100">
             <li>
               <NavLink
                 to="/"
@@ -87,28 +87,27 @@ const Navbar = () => {
               <div className="relative inline-flex items-center z-50">
                 <button
                   onClick={toggleDropdown}
-                  className="px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
+                  className="group px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
                 >
                   <div className="flex items-center">
-                    <span className="mr-1">{t('home:events')}</span>
-                    <span className="hover:text-white">
+                    <span className="mr-1 group-hover:text-white">{t('home:events')}</span>
+                    <span className="group-hover:text-white">
                       <svg
-                        className="h-5 w-5 text-primary hover:text-white"
+                        className="h-5 w-5 text-primary group-hover:text-white"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
                       >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clipRule="evenodd"
-                        />
+                        <path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
                       </svg>
                     </span>
                   </div>
                 </button>
                 {dropdownOpen && (
-                  <div className="absolute top-full left-0 z-100 w-[10rem] bg-primary border border-gray-300">
+                  <div className="relative top-full left-0 z-50 w-[10rem] bg-primary border border-gray-300">
                     {options.map((item) => (
                       <ul>
                         <NavLink
