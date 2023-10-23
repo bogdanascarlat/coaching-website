@@ -92,22 +92,23 @@ const Navbar = () => {
                   <div className="flex items-center">
                     <span className="mr-1 group-hover:text-white">{t('home:events')}</span>
                     <span className="group-hover:text-white">
-                      <svg
+                    <svg
                         className="h-5 w-5 text-primary group-hover:text-white"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
                       >
-                        <path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     </span>
                   </div>
                 </button>
                 {dropdownOpen && (
-                  <div className="relative top-full left-0 z-50 w-[10rem] bg-primary border border-gray-300">
+                  <div className="absolute top-full left-0 z-50 w-[10rem] bg-primary border border-gray-300">
                     {options.map((item) => (
                       <ul>
                         <NavLink

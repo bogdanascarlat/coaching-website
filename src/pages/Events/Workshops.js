@@ -12,7 +12,7 @@ const Workshops = () => {
     <div>
       <Navbar/>
       <div
-          className="relative bg-cover bg-center bg-no-repeat h-screen mt-[5rem] mb-[5rem]"
+          className="relative bg-cover bg-center bg-no-repeat h-screen"
           style={{ backgroundImage: `url(${coming_soon})` }}
       >
           <div className="absolute inset-0 bg-black opacity-60"></div>

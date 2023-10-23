@@ -19,7 +19,8 @@ body {
 }
 
 nav.header {
-  @apply bg-secondary drop-shadow;
+  @apply bg-secondary drop-shadow relative;
+  z-index: 9999;
 }
 
 nav.header.sticky {
@@ -27,7 +28,6 @@ nav.header.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999;
 }
 
 .mobile-nav {
