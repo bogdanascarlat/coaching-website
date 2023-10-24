@@ -12,7 +12,7 @@ const Invite = () => {
         <img
           src={invite}
           alt="one to one"
-          className="h-full bg-[#343a40] p-16 shadow-md"
+          className="h-[30%] md:h-full xl:h-full bg-[#343a40] p-16 shadow-md"
         />
       </div>
       <div className="ml-auto mr-auto flex flex-1 flex-col items-start justify-center bg-[#343a40]">
