@@ -181,19 +181,31 @@ const Navbar = () => {
                   </div>
                   <ul className="list-none">
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
-                      <a href="/" onClick={() => setToggleMenu(false)}>
-                      {t("home:home")}
-                      </a>
+                      <NavLink
+                        to="/"
+                        onClick={() => setToggleMenu(false)}
+                        className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90"
+                      >
+                        {t("home:home")}
+                      </NavLink>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
-                      <a href="about" onClick={() => setToggleMenu(false)}>
-                      {t("home:about")}
-                      </a>
+                      <NavLink
+                        to="/about"
+                        onClick={() => setToggleMenu(false)}
+                        className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                      >
+                        {t("home:about")}
+                      </NavLink>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
-                      <a href="solutions" onClick={() => setToggleMenu(false)}>
-                      {t("home:products")}
-                      </a>
+                      <NavLink
+                        to="/solutions"
+                        onClick={() => setToggleMenu(false)}
+                        className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                      >
+                        {t("home:products")}
+                      </NavLink>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90 z-100" style={{ zIndex: 100 }}>
                       <div className="relative inline-flex z-100" style={{ zIndex: 100 }}>
@@ -233,9 +245,12 @@ const Navbar = () => {
                       </div>
                     </li>
                     <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90">
-                      <a href="contact" onClick={() => setToggleMenu(false)}>
+                      <NavLink
+                        to="/contact"
+                        className="mx-2 px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                      >
                         Contact
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                   <div className="flex justify-center">
