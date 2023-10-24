@@ -212,7 +212,7 @@ const About = () => {
                   {t("about:endtext3")}
                 </p>
               </div>
-              <div className="mt-20 mb-10 w-[50%] bg-transparent text-center text-2xl text-white">
+              <div className="mt-20 mb-10 w-[80%] md:w-[50%] xl:w-[50%] bg-transparent text-center text-2xl text-white">
                 <p className="bg-transparent text-xl font-bold text-white">
                   {t("about:endtext4")}
                 </p>

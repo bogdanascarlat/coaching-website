@@ -27,7 +27,7 @@ const Invite = () => {
             {t("home:invitetext")}
           </p>
           <a
-            href="https://calendly.com/roxana-dumitrescu-coach-rhc/60min"
+            href="https://bit.ly/3owcQLe"
             className="ml-auto mr-auto flex h-[13%] md:h-[20%] xl:h-[20%] w-[70%] md:w-[43%] xl:w-[43%] cursor-pointer items-center justify-center rounded-md bg-[#f0f0f0] px-6 py-2 text-center text-base font-bold leading-tight tracking-widest text-[#343a40] hover:bg-[#868e96] hover:text-white"
           >
             {t("home:schedulemeeting")}

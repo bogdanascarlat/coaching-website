@@ -52,7 +52,7 @@ const QuestionsSlider = () => {
       <div className="slider-content flex h-96 md:h-60 xl:h-60 flex-col items-center justify-center overflow-y-auto sm:w-[90%]">
         {slides.map((slide, index) => (
           <div key={index} className={index === currentSlide ? "" : "hidden"}>
-            <h2 className="mb-4 mt-10 text-2xl font-bold">{slide.title}</h2>
+            <h2 className="mb-4 mt-16 text-2xl font-bold">{slide.title}</h2>
             <p className="mb-6 text-lg leading-relaxed">{slide.content}</p>
           </div>
         ))}

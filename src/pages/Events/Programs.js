@@ -47,16 +47,16 @@ const Programs = () => {
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl font-bold z-10">
           <div className="text-center">
-            <h1 className="w-[30rem] md:w-[50rem] sm:w-[50rem] sliding-paragraph text-xl md:text-4xl sm:text-4xl font-bold leading-9 text-center my-10 md:my-0 xl:my-0">{t("programs:header")}</h1>
+            <h1 className="w-[20rem] md:w-[50rem] sm:w-[50rem] sliding-paragraph text-lg md:text-4xl sm:text-4xl font-bold leading-9 text-center my-10 md:my-0 xl:my-0">{t("programs:header")}</h1>
           </div>
           <button
-            type="button"
-            className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
-            onClick={toggleForm}
-          >
-            {t("programs:registerButton")}
-          </button>
-          {showForm && <Modal closeForm={toggleForm} />}
+                type="button"
+                className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
+                onClick={toggleForm}
+              >
+                {t("programs:registerButton")}
+              </button>
+              {showForm && <Modal closeForm={toggleForm} />}
         </div>
       </div>
       
@@ -94,9 +94,9 @@ const Programs = () => {
       <div className="mb-[6rem] flex items-center justify-center">
         <div className="relative w-[90%]">
           <img src={programRelease} alt="writing" className="w-full" />
-          <div className="md:absolute left-0 top-0 h-full w-full flex items-center justify-center bg-white md:bg-black md:bg-opacity-70 text-xl">
+          <div className="md:absolute left-0 top-0 h-full w-full flex items-center justify-center md:bg-black md:bg-opacity-70 text-xl">
             <div className="w-[80%] md:text-justify bg-transparent text-xl text-black md:text-white my-10 md:my-0 xl:my-0">
-              <div className="mb-20">
+              <div className="mb-5">
                 <p dangerouslySetInnerHTML={{ __html: t('program1') }} className="text-lg mb-5 leading-relaxed text-center sm:text-xl"/>
                 <p className="text-lg sm:text-xl leading-relaxed text-center">
                   {t("programs:program2")}
@@ -112,15 +112,15 @@ const Programs = () => {
                 </p>
                 <p dangerouslySetInnerHTML={{ __html: replaceGiftWordWithStyle(translatedGift)}} className="mb-5 text-lg leading-relaxed text-center sm:text-xl"/>
               </div>
-              <div className="mt-10 mb-10 w-[60%] sm:w-[50%] md:w-[50%] xl:w-[50%] mx-auto bg-transparent text-center text-2xl text-white">
+              <div className="flex text-center justify-center">
                 <button
                   type="button"
                   className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
                   onClick={toggleForm}
                 >
                   {t("programs:registerButton")}
-                </button>
                   {showForm && <Modal closeForm={toggleForm} />}
+                </button>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ const Programs = () => {
           alt="presentation"
           className="w-full md:w-[35rem]"
         />
-        <div className="items-center justify-center text-center pl-14 pr-14 py-5 border-2 shadow-2xl">
+        <div className="items-center justify-center text-center px-5 py-5 border-2 shadow-2xl">
           <p className="mb-5 text-lg leading-relaxed sm:text-lg">
             {t("programs:info1")}
           </p>
@@ -143,16 +143,14 @@ const Programs = () => {
           <p className="mb-5 text-lg leading-relaxed sm:text-lg">
             {t("programs:info3")}
           </p>
-          <div className="w-[60%] md:w-[50%] xl:w-[50%] text-center md:flex md: mx-auto">
-            <button
-              type="button"
-              className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
-              onClick={toggleForm}
-            >
-              {t("programs:registerButton")}
-            </button>
-            {showForm && <Modal closeForm={toggleForm} />}
-          </div>
+          <button
+            type="button"
+            className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
+            onClick={toggleForm}
+          >
+            {t("programs:registerButton")}
+          </button>
+          {showForm && <Modal closeForm={toggleForm} />}
         </div>
       </div>
       
@@ -242,16 +240,14 @@ const Programs = () => {
                 {t("programs:manifest21")}
                 </p>
               </div>
-              <div className="mt-10 mb-10 w-[60%] sm:w-[50%] md:w-[50%] xl:w-[50%] mx-auto bg-transparent text-center text-2xl text-white">
-                <button
-                  type="button"
-                  className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
-                  onClick={toggleForm}
-                >
-                  {t("programs:registerButton")}
-                </button>
-                {showForm && <Modal closeForm={toggleForm} />}
-              </div>
+              <button
+                type="button"
+                className="rounded-md bg-[#8B0000] px-4 py-2 text-lg font-bold tracking-wider text-white hover:bg-[#4A0404] sm:text-xl mt-10 w-64 h-12 sm:w-96 sm:h-16 uppercase"
+                onClick={toggleForm}
+              >
+                {t("programs:registerButton")}
+              </button>
+              {showForm && <Modal closeForm={toggleForm} />}
           </div>
         </div>
       </div>
