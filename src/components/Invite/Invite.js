@@ -12,11 +12,11 @@ const Invite = () => {
         <img
           src={invite}
           alt="one to one"
-          className="h-[30%] md:h-full xl:h-full bg-[#343a40] p-16 shadow-md"
+          className="h-[80%] mx-auto md:h-full xl:h-full bg-[#343a40] px-12 py-12"
         />
       </div>
       <div className="ml-auto mr-auto flex flex-1 flex-col items-start justify-center bg-[#343a40]">
-        <h2 className="logo font-dancingScript xs:text-center mb-3 flex justify-between bg-[#343a40] text-4xl text-white">
+        <h2 className="logo font-dancingScript ml-10 md:ml-0 xl:ml-0 mt-[-8rem] md:mt-0 xl:mt-0 mb-0 md:mb-3 xl:mb-3 flex justify-between bg-[#343a40] text-4xl text-white hover:text-slate-300">
           Roxana Dumitrescu
         </h2>
         <div className="mb-60 mt-40 bg-[#343a40] text-2xl font-bold mx-10">
