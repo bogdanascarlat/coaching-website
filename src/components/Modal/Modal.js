@@ -21,7 +21,7 @@ const Modal = ({ closeForm }) => {
       
       console.log(formData)
 
-      const response = await fetch("http://localhost:8080/send-email", {
+      const response = await fetch("https://13.51.241.140:8000/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
