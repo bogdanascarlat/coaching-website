@@ -65,7 +65,7 @@ const Modal = ({ closeForm }) => {
         </div>
         ) : (
         <div>
-          <button className="absolute top-2 text-5xl right-2 text-red-600" onClick={closeForm}>
+          <button className="absolute top-[-1.5rem] text-5xl right-2 text-red-600" onClick={closeForm}>
             X
           </button>
           <h1 className="text-3xl font-bold mb-3 text-center text-black">
@@ -78,7 +78,7 @@ const Modal = ({ closeForm }) => {
               action="/send-email"
               className="text-center p-4 border-4 border-[#495057] rounded-3xl mt-10"
           >
-                <div className="flex flex-wrap mx-2 w-[25rem] md:w-[40rem]">
+                <div className="flex flex-wrap mx-2 w-[19rem] md:w-[40rem]">
                     <div className="w-1/2 md:w-1/2 px-2">
                         <input
                             type="text"
