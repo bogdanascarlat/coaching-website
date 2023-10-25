@@ -207,34 +207,38 @@ const Navbar = () => {
                         {t("home:products")}
                       </NavLink>
                     </li>
-                    <li className="my-8 cursor-pointer text-center font-sans text-2xl font-medium text-primary hover:text-primary/90 z-100" style={{ zIndex: 100 }}>
+                    <li className="cursor-pointer text-center font-sans text-2xl  font-medium text-primary z-100" style={{ zIndex: 100 }}>
                       <div className="relative inline-flex z-100" style={{ zIndex: 100 }}>
                         <button
                           onClick={toggleDropdown}
-                          className="px-4 py-2 hover:rounded-lg hover:text-primary/90 inline-flex items-center"
+                          className="group px-4 py-2 hover:rounded-lg hover:bg-primary hover:text-white inline-flex items-center"
                         >
-                          <span className="mr-1">{t('home:events')}</span>
-                          <svg
-                            className="h-5 w-5 text-primary"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
+                          <div className="flex items-center">
+                            <span className="mr-1 group-hover:text-white">{t('home:events')}</span>
+                            <span className="group-hover:text-white">
+                            <svg
+                                className="h-5 w-5 text-primary group-hover:text-white"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                  clipRule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </div>
                         </button>
                         {dropdownOpen && (
-                          <div className="absolute left-[11rem] top-4 w-[8rem] z-10 bg-primary border border-gray-300 justify-start">
+                          <div className="absolute left-[11rem] top-4 w-[7rem] md:w-[8rem] xl:w-[8rem] z-10 bg-primary border border-gray-300 justify-start">
                             {options.map((item) => (
                               <ul className="justify-start">
                                 <NavLink
                                   key={item.link}
                                   to={item.link}
-                                  className="py-2 pl-2 text-lg text-white hover:underline flex justify-start"
+                                  className="py-2 pl-2 text-sm md:text-lg xl:text-lg text-white hover:underline flex justify-start"
                                 >
                                   <span className="mr-1">{item.label}</span>
                                 </NavLink>
