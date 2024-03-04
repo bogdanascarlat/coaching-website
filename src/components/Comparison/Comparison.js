@@ -5,7 +5,7 @@ import after from "../../assets/after.jpg";
 import { useTranslation } from "react-i18next";
 
 const Comparison = () => {
-  const { t } = useTranslation(["home"]);
+  const { t } = useTranslation(["comparison"]);
   return (
     <div className="mt-[6rem]">
       <div className="grid grid-cols-1 md:grid-cols-2">
@@ -35,7 +35,7 @@ const Comparison = () => {
         />
         <div>
           <q className="mb-2 block text-3xl font-bold">
-            Balance is the perfect state of still water. Let that be our model.
+            {t("comparison:quote")}
           </q>
           <p className="text-lg font-bold">&#8211; Confucius &#8211;</p>
         </div>

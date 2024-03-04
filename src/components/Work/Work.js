@@ -12,7 +12,7 @@ function Work() {
         <h1 className="mb-3 text-center text-3xl font-bold">
           {t("home:howwillweworktogether")}
         </h1>
-        <p className="mx-auto mt-5 w-1/2 items-center text-center text-2xl font-semibold">
+        <p className="mx-auto mt-5 w-full md:w-1/2 md:w-1/2 items-center text-center text-2xl font-semibold">
           {t("home:iwillhelpyouidentifythebestoptionaccordingtoyourneeds.")}
         </p>
       </div>

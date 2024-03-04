@@ -39,7 +39,7 @@ const ReviewCarousel = () => {
   return (
   <div>
     <div class="mt-[6rem] mx-auto text-center md:max-w-xl lg:max-w-3xl">
-      <h3 class="mb-10 text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+      <h3 class="mb-10 text-3xl font-bold dark:text-neutral-200">
         {t("home:testimonials")}
       </h3>
     </div>
@@ -216,7 +216,7 @@ const ReviewCarousel = () => {
               src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/30" alt="user"/>
           </div> */}
-          <h5 class="mb-4 text-xl font-semibold">Catalina</h5>
+          <h5 class="mb-4 text-xl font-semibold">Cătălina</h5>
           <p class="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

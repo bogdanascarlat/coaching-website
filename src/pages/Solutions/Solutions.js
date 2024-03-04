@@ -45,10 +45,10 @@ const Solutions = () => {
       <Navbar />
       <div className="mt-[7.5rem] mb-[7.5rem]">
         <div className="mb-3">
-          <h1 className="sliding-paragraph mb-3 text-center text-4xl font-bold">
+          <h1 className="sliding-paragraph mb-3 text-center text-3xl md:text-4xl xl:text-4xl font-bold">
             {t("solutions:wewillidentifythebestcustomizedsolutionsforyou")}
           </h1>
-          <p className="mx-auto mt-5 w-1/2 items-center text-center text-2xl font-semibold">
+          <p className="mx-auto mt-10 md:mt-5 xl:mt-5 mb-16 w-full md:w-1/2 xl:w-1/2 items-center text-center text-2xl font-semibold">
             {t(
               "solutions:Iwillhelpyouidentifythebestoptionaccordingtoyourneedsbelowyoucanfinddetailsforeachone."
             )}

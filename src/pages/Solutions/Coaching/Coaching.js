@@ -34,7 +34,7 @@ const Coaching = () => {
           <dd className="mb-2 bg-[#ffe8cc]">{t("solutions:coachingp7")}</dd>
 
           <dt className="bg-[#ffe8cc] font-semibold">
-            {t("solutions:coaching8")}
+            {t("solutions:coachingp8")}
           </dt>
           <dd className="mb-2 bg-[#ffe8cc]">{t("solutions:coachingp9")}</dd>
 

@@ -22,7 +22,7 @@ const Contact = () => {
           {t("contact:iinviteyou")}
         </p>
         <a
-          href="https://calendly.com/roxana-dumitrescu-coach-sesiune-consultanta-/60min"
+          href="https://calendly.com/roxana-dumitrescu-coach-sesiune-consultanta-/30min"
           className="ml-auto mr-auto flex h-[25%] w-72 cursor-pointer items-center justify-center rounded-md bg-[#343a40] px-6 py-3.5 text-center text-lg font-bold leading-tight tracking-widest text-[#f0f0f0] hover:bg-[#868e96] hover:text-white"
         >
           {t("contact:scheduleameeting")}

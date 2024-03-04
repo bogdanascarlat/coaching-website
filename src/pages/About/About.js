@@ -40,7 +40,7 @@ const About = () => {
           <img src={writing} alt="writing" className="w-full" />
           <div className="md:absolute left-0 top-0 h-full w-full flex items-center justify-center bg-black bg-opacity-50 text-xl">
             <div className="w-[80%] md:text-justify bg-transparent text-xl text-white my-10 md:my-0 xl:my-0">
-              <div className="mb-20">
+              <div className="mb-5">
                 <p className="mb-5 bg-transparent text-white">
                   {t("about:p1")}
                 </p>
@@ -52,7 +52,7 @@ const About = () => {
                 <p className="mb-5 bg-transparent text-white">
                   {t("about:p3")}
                 </p>
-                <h2 className="bg-transparent text-2xl font-bold text-white">
+                <h2 className="bg-transparent text-2xl font-bold text-white mb-5">
                   {t("about:p4")}
                 </h2>
                 <p className="bg-transparent text-white">
@@ -118,15 +118,15 @@ const About = () => {
             className="h-100 bg-[#343a40] p-16 shadow-md"
           />
         </div>
-        <div className="ml-auto text-center md:text-justify lg:text-justify mr-auto flex flex-1 flex-col items-start justify-center bg-[#343a40]">
-          <h2 className="bg-[#343a40] text-3xl font-bold leading-9 text-white mb-6 mr-12 md:mb-14 lg:mb-14 sm:mt-3">
+        <div className="ml-auto text-center content-center md:text-justify lg:text-justify mr-auto flex flex-1 flex-col justify-center bg-[#343a40] px-6">
+          <h2 className="bg-[#343a40] text-3xl font-bold leading-9 text-white mb-6 md:mb-14 lg:mb-14 sm:mt-3">
             {t("about:why")}
           </h2>
-          <div className="mr-12 bg-[#343a40]">
+          <div className="bg-[#343a40]">
             <p className="bg-[#343a40] text-white">{t("about:limit")}</p>
             <button
               type="button"
-              className="mt-10 mb-10 ml-10 md:ml-0 lg:ml-0 md:mb-0 lg:mb-0 rounded-md bg-[#f0f0f0] px-4 py-2 text-sm font-bold tracking-wider text-[#343a40] hover:bg-[#adb5bd] hover:text-white sm:text-base"
+              className="mx-auto my-10 md:ml-0 lg:ml-0 md:mb-0 lg:mb-0 rounded-md bg-[#f0f0f0] px-4 py-2 text-sm font-bold tracking-wider text-[#343a40] hover:bg-[#adb5bd] hover:text-white sm:text-base"
               onClick={toggleNewText}
             >
               {showNewText ? t("about:hide") : t("about:findmore")}
@@ -168,9 +168,9 @@ const About = () => {
                   <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp1")}
                   </li>
-                  <li className="mb-5 bg-transparent text-xl text-white">
+                  {/* <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp2")}
-                  </li>
+                  </li> */}
                   <li className="mb-5 bg-transparent text-xl text-white">
                     {t("about:endtextp3")}
                   </li>
